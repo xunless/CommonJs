@@ -223,3 +223,97 @@ linkProps(url) {
   }
 }
 ```
+
+## 常用正则校验
+
+```javascript
+/**
+ * 邮箱
+ * @param {*} s
+ */
+export function isEmail (s) {
+  return /^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+((.[a-zA-Z0-9_-]{2,3}){1,2})$/.test(s)
+}
+
+/**
+ * 手机号码
+ * @param {*} s
+ */
+export function isMobile (s) {
+  return /^1[0-9]{10}$/.test(s)
+}
+
+/**
+ * 电话号码
+ * @param {*} s
+ */
+export function isPhone (s) {
+  return /^([0-9]{3,4}-)?[0-9]{7,8}$/.test(s)
+}
+
+/**
+ * URL地址
+ * @param {*} s
+ */
+export function isURL (s) {
+  return /^http[s]?:\/\/.*/.test(s)
+}
+
+/**
+ * 8-16位数字和字母密码
+ * @param {*} s
+ */
+export function isPassWord (s) {
+  return /^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{8,16}$/.test(s)
+}
+
+/**
+ * QQ号
+ * @param {*} s
+ */
+export function isQQ (s) {
+  return /[1-9][0-9]{4,}/.test(s)
+}
+
+/**
+ * IP地址
+ * @param {*} s
+ */
+export function isIP (s) {
+  return /\d+\.\d+\.\d+\.\d+/.test(s)
+}
+
+/**
+ * 中文
+ * @param {*} s
+ */
+export function isZH (s) {
+  return /^[\u4e00-\u9fa5]*$/.test(s)
+}
+```
+
+## 计算倒计时
+
+```javascript
+/**
+ * 倒计时
+ * @param {Number} timeStamp 倒计时结束的时间戳 毫秒 13位
+ */
+export function seckillTime(timeStamp) {
+  timeStamp = timeStamp - new Date().getTime()
+  let day = Math.floor(timeStamp / (24 * 3600 * 1000))
+  let leave1 = timeStamp % (24 * 3600 * 1000)
+  let hours = Math.floor(leave1 / (3600 * 1000))
+  let leave2 = leave1 % (3600 * 1000)
+  let minutes = Math.floor(leave2 / (60 * 1000))
+  let leave3 = leave2 % (60 * 1000)
+  let seconds = Math.floor(leave3 / 1000)
+  if (day) return day + '天' + hours + '小时' + minutes + '分'
+  if (hours) return hours + '小时' + minutes + '分' + seconds + '秒'
+  if (minutes) return minutes + '分' + seconds + '秒'
+  if (seconds) return seconds + '秒'
+  return '时间到！'
+}
+```
+
+
