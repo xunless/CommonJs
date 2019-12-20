@@ -318,31 +318,29 @@ export function seckillTime(timeStamp) {
 
 ## 数据状态组件(uni-app)
 
-![image](../.vuepress/public/images/uniStepsShow.png)
+### 示例
+![image](/images/uniStepsShow.png)
 
 组件名：uni-steps
 
-组件下载地址  https://files.cnblogs.com/files/baobao0205/uni-steps.rar
+[组件下载地址](https://files.cnblogs.com/files/baobao0205/uni-steps.rar)
 
-使用方式
-1、在 script 中引用组件
+### 使用方式
+* 在 script 中引用组件
+  > import uniSteps from '@/components/uni-steps/uni-steps.vue'
+  > export default {
+  >    components: {uniSteps}
+  > }
+* 在 template 中的使用
+  > <uni-steps :options="options" :success-icon="successimg" :error-icon="errorimg"></uni-steps>
 
-```javascript
-import uniSteps from '@/components/uni-steps/uni-steps.vue'
-export default {
-    components: {uniSteps}
-}
-```
-2、在 template 中的使用
-```javascript
-<uni-steps :options="options" :success-icon="successimg" :error-icon="errorimg"></uni-steps>
-```
-3、属性说明
-     属性名       类型    	默认值                              说明
-    options      Array                格式为：[{title:'xxx',state:'1'},{title:'xxx',state:'0'}] title: 显示内容  state: 状态 1成功 2失败
-  successimg    String
-   errorimg     String
-   rowColor     String    #3D97FF
-  borderColor   String    #c8c7cc
+* 属性说明
+  > 属性名 | 类型 | 默认值 | 说明
+  > -|-|-|-
+  > options | Array|  | 格式为：[{title:'xxx',state:'1'},{title:'xxx',state:'0'}] title: 显示内容  state: 状态 1成功 2失败
+  > successimg | String
+  > errorimg | String
+  > rowColor | String | #3D97FF
+  > borderColor | String | #c8c7cc
 
 
