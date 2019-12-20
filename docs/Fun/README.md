@@ -337,7 +337,7 @@ export function seckillTime(timeStamp) {
 * 属性说明
   > 属性名 | 类型 | 默认值 | 说明
   > -|-|-|-
-  > options | Array|  | 格式为：[{title:'xxx',state:'1'},{title:'xxx',state:'0'}] title: 显示内容  state: 状态 1成功 2失败
+  > options | Array|  | 格式为：[{title:'xxx',state:'1'},{title:'xxx',state:'0'}] title: 显示内容  state: 状态 1成功 0失败
   > successimg | String
   > errorimg | String
   > rowColor | String | #3D97FF
