@@ -327,13 +327,16 @@ export function seckillTime(timeStamp) {
 
 ### 使用方式
 * 在 script 中引用组件
+```javascript
   import uniSteps from '@/components/uni-steps/uni-steps.vue'
   export default {
     components: {uniSteps}
   }
+```
 * 在 template 中的使用
+```javascript
   <uni-steps :options="options" :success-icon="successimg" :error-icon="errorimg"></uni-steps>
-
+```
 * 属性说明
   属性名 | 类型 | 默认值 | 说明
   -|-|-|-
