@@ -341,8 +341,8 @@ export function seckillTime(timeStamp) {
   属性名 | 类型 | 默认值 | 说明
   -|-|-|-
   options | Array|  | 格式为：[{title:'xxx',state:'1'},{title:'xxx',state:'0'}] title: 显示内容  state: 状态 1成功 0失败
-  successimg | String|  | 状态为'1'时显示的图标
-  errorimg | String|  | 状态为'0'时显示的图标
+  successIcon | String|  | 状态为'1'时显示的图标
+  errorIcon | String|  | 状态为'0'时显示的图标
   rowColor | String | #3D97FF| 图标下竖线的颜色
   borderColor | String | #c8c7cc| 显示内容下横线的颜色
 
