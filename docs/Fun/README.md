@@ -346,4 +346,37 @@ export function seckillTime(timeStamp) {
   rowColor | String | #3D97FF| 图标下竖线的颜色
   borderColor | String | #c8c7cc| 显示内容下横线的颜色
 
+## 判断是否为IE浏览器
+
+```javascript
+/**
+  * desc 判断是否为IE浏览器  IE11及以下
+  * author
+  * time 2019年12月17日 12:04:15 星期二
+  */
+export function isIE() {
+  if (!!window.ActiveXObject || 'ActiveXObject' in window) {
+    return true
+  } else {
+    return false
+  }
+}
+```
+
+## 随机颜色
+
+```javascript
+/**
+ * desc 随机颜色
+ * author
+ * time 2019年12月19日 18:56:06 星期四
+ */
+export function rgb() { // rgb颜色随机
+  var r = Math.floor(Math.random() * 256)
+  var g = Math.floor(Math.random() * 256)
+  var b = Math.floor(Math.random() * 256)
+  var rgb = '(' + r + ',' + g + ',' + b + ')'
+  return 'rgb' + rgb
+}
+```
 
