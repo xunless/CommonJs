@@ -380,3 +380,31 @@ export function rgb() { // rgb颜色随机
 }
 ```
 
+
+## 简单深拷贝
+
+```javascript
+/**
+ * desc 简单深拷贝
+ * author 
+ * time 2019年12月21日 10:06:38 星期六
+ * @param {Object} source
+ * @returns {Object}
+ */
+export function deepClone(source) {
+  if (!source && typeof source !== 'object') {
+    throw new Error('error arguments', 'deepClone')
+  }
+  const targetObj = source.constructor === Array ? [] : {}
+  Object.keys(source).forEach(keys => {
+    if (source[keys] && typeof source[keys] === 'object') {
+      targetObj[keys] = deepClone(source[keys])
+    } else {
+      targetObj[keys] = source[keys]
+    }
+  })
+  return targetObj
+}
+
+```
+
