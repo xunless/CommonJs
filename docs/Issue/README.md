@@ -15,3 +15,8 @@
 ``` html
 <a data-fancybox title="xx" class="psimg" href="/images/css/ps01.jpg">![案例视图](/images/css/ps01.jpg)</a>
 ```
+## :smile: VUE 中如何初始化ActiveXObject对象
+``` js
+const { ActiveXObject } = window
+this.myObject = new ActiveXObject('myActiveX.PcscActiveX') || null
+````
