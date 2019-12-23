@@ -1,10 +1,16 @@
-### 巧妙使用flex布局实现手机自定义
+<!--
+ * @Desc: ---   ----
+ * @Date: 2019-12-23 11:47:00
+ * @LastEditors  : 王
+ * @LastEditTime : 2019-12-23 11:58:06
+ -->
+## 巧妙使用flex布局实现手机自适应
 Html布局代码，使用改布局即可解决在各移动设备的顶部Tab切换，下方需要无限加载布局。
 PS:案例视图
 
 
 
-<a data-fancybox title="xx" href="/images/css/ps01.jpg">![案例视图](/images/css/ps01.jpg)</a>
+<a data-fancybox title="xx" class="psimg" href="/images/css/ps01.jpg">![案例视图](/images/css/ps01.jpg)</a>
 ``` html
   <view class="container">
     <view style="height:300rpx">固定在头部的标题</view>

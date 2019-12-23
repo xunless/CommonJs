@@ -2,7 +2,7 @@
  * @Desc: ---   ----
  * @Date: 2019-11-11 12:02:17
  * @LastEditors  : 王
- * @LastEditTime : 2019-12-23 11:14:26
+ * @LastEditTime : 2019-12-23 11:57:47
  */
 module.exports = {
   title: '诚毅物联网',
