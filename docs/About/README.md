@@ -9,7 +9,7 @@
 
 ## 仓库地址
 
-源代码地址:[点击前往](https://github.com/bmmanmyt/CommonJS.git)
+源代码地址:[点击前往](https://github.com/xunless/CommonJS.git)
 
 ## 新建常用用法（##）
 
@@ -30,7 +30,9 @@
 ## 提交发布
 
 ```
-npm run docs:build
+先全局安装 vuepress
+npm install -g vuepress
+运行根目录 deploy.sh
 ```
 
 完成之后推送至远程分支
