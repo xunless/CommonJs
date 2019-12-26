@@ -2,11 +2,11 @@
  * @Desc: ---   ----
  * @Date: 2019-12-23 11:47:00
  * @LastEditors  : 王
- * @LastEditTime : 2019-12-26 08:51:27
+ * @LastEditTime : 2019-12-26 08:52:20
  -->
 ## 基于uni.request封装的请求
 
-::: tip
+::: tip 提示
    baseurl是请求接口的接口地址
 :::
 ### 使用方法
