@@ -2,11 +2,11 @@
  * @Desc: ---   ----
  * @Date: 2019-12-23 11:47:00
  * @LastEditors  : 王
- * @LastEditTime : 2019-12-26 08:49:27
+ * @LastEditTime : 2019-12-26 08:51:27
  -->
 ## 基于uni.request封装的请求
 
-::: 温馨提示
+::: tip
    baseurl是请求接口的接口地址
 :::
 ### 使用方法
@@ -34,19 +34,19 @@ function request(url, methods, type) {
 				
 			},
 			success(res) {
-        if(res.statusCode===200){
-          resolve(res.data,true) // 此处的true可用于直接在await返回值进行判断。可删除。
-        }else {
-          uni.showToast({
-            icon:'none',
-            title: errormessage[res.statusCode],
-            duration: 2000
-          });
-          resolve(res.data,false)
-        }
-			},
+          if(res.statusCode===200){
+            resolve(res.data,true) // 此处的true可用于直接在await返回值进行判断。可删除。
+          }else {
+              uni.showToast({
+                icon:'none',
+                title: errormessage[res.statusCode],
+                duration: 2000
+              });
+            resolve(res.data,false)
+          }
+	  	},
 			fail(error) {
-        uni.showToast({
+          uni.showToast({
           icon:'none',
           title: '未知异常，请重试！！！',
           duration: 2000
