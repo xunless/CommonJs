@@ -42,7 +42,7 @@ function request(url, methods, type) {
                 title: errormessage[res.statusCode],
                 duration: 2000
               });
-            resolve(res.data)
+            reject(res.data)
           }
 	  	},
 			fail(error) {
