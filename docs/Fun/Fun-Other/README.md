@@ -238,7 +238,7 @@ export function isZH (s) {
 }
 ```
 
-## 计算倒计时2345
+## 计算倒计时
 
 ```javascript
 /**
