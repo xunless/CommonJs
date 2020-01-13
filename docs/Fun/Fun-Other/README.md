@@ -261,3 +261,34 @@ export function seckillTime(timeStamp) {
   return '时间到！'
 }
 ```
+
+## 将字符串转换为n个字符串一起的数组
+
+例子:
+
+```javascript
+将 123456 转换为 [12, 34, 56]
+
+let str = 123456
+strToArr2(str,2) // [12, 34, 56]
+```
+
+方法:
+
+```javascript
+/*
+ * 将字符串转换为数组 
+ * s: 要转换的字符串
+ * n: 要转换为几个一起的字符串(数组的长度-1)
+*/
+export function strToArr2(s, n) {
+  var re = new RegExp(".{" + n +"}","g")
+  var a = []
+	var n
+  while ((n=re.exec(s)) != null){
+      a[a.length] = n[0]
+  }
+  return a
+}
+```
+
