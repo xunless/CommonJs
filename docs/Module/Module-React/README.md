@@ -2,9 +2,9 @@
  * @Desc: ---   ----
  * @Date: 2019-12-23 11:47:00
  * @LastEditors: 王
- * @LastEditTime: 2020-04-06 10:38:54
+ * @LastEditTime: 2020-04-06 10:39:59
  -->
-## 封装无状态组件搜索框，提供多语言，回调函数返回Ipnut中值
+## 组件搜索框
 ``` javascript
 import PageConterHeader from '@/components/UserCompoments/GlobalPageContHeader'
 <PageConterHeader />
