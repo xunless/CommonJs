@@ -44,3 +44,15 @@ PS:案例视图
       background: #ccc 
     }
 ```
+
+## css多行显示...
+
+````css
+	overflow: hidden;
+	display: -webkit-box;
+	text-overflow: ellipsis;
+	-webkit-line-clamp: 2; /* 2 表示两行出现。。。 ，这个是行数*/
+	-webkit-box-orient: vertical;
+
+````
+
