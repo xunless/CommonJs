@@ -1,4 +1,4 @@
-##### 1.封装无状态组件搜索框，提供多语言，回调函数返回Ipnut中值
+## 1.封装无状态组件搜索框，提供多语言，回调函数返回Ipnut中值
 ``` javascript
 import PageConterHeader from '@/components/UserCompoments/GlobalPageContHeader'
 <PageConterHeader />
@@ -10,12 +10,12 @@ import PageConterHeader from '@/components/UserCompoments/GlobalPageContHeader'
 |inputPlaceholderOne| 第一个输入框描述文字|string|
 |inputPlaceholderTwo| 第二个输入框描述文字|string|
 |inputPlaceholderThree| 第三个输入框描述文字|string|
-##### 2.页面添加按钮组件
+## 2.页面添加按钮组件
 | 参数 | 用途 | 类型 |
 | ------ | ------ | ------ |
 |ok | 点击按钮 | Function|
 |searchText| 点击按钮文字 | string|
-##### 3.分页组件
+## 3.分页组件
 | 参数 | 用途 | 类型 |
 | ------ | ------ | ------ |
 |onChange | 页数/每页数量变化触发 | Function|
@@ -33,8 +33,8 @@ import GlobalPageAddItemHeader from '@/components/UserCompoments/GlobalPageAddIt
 |click | 点击事件 | Function|
 |title| icon后面文字|string|
 |desc| 描述文字|string|
-##### 2进出场动画，API文档[点击进入](https://motion.ant.design/api/queue-anim-cn)
-##### 动画库组件
+## 2进出场动画，API文档[点击进入](https://motion.ant.design/api/queue-anim-cn)
+### 动画库组件
 ``` javascript
 import GlobalPageQueueAnim from '@/components/UserCompoments/GlobalPageQueueAnim'
 
@@ -57,7 +57,7 @@ import Upload from '@/components/UserCompoments/UpLoadFile'
 |maxSize| 文件最大(M)|number|
 |fileName| 附带参数文件夹的名字|string|
 
-##### 地图组件
+## 地图组件
 ``` javascript 
 import BdMap, { MapResultInfoProps } from '@/components/UserCompoments/BdMap'
 <BdMap onChange={e => { mapOnchange(e) }} />
@@ -81,7 +81,7 @@ const Twe: any = TweenOne
   <Twe animation={{ Children: { value: prop.number | 0, floatLength: 0, formatMoney: true } }} style={{ fontSize: 36, paddingTop: 16 }}> 0 
   </Twe>
 ```
-##### 删除弹窗
+## 删除弹窗
 
 ``` javascript
 import PageDialogDelete from '@/components/UserCompoments/PageDialogDelete'
