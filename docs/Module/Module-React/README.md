@@ -1,5 +1,4 @@
-## React组件
-## 1.封装无状态组件搜索框，提供多语言，回调函数返回Ipnut中值
+## 封装无状态组件搜索框，提供多语言，回调函数返回Ipnut中值
 ``` javascript
 import PageConterHeader from '@/components/UserCompoments/GlobalPageContHeader'
 <PageConterHeader />
