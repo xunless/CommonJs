@@ -383,3 +383,7 @@ export function throttle(fn, interval) {
     }
 </script>
 ```
+
+## 常用正则总结
+
+https://github.com/menglin1997/summary/blob/master/common/utils/validate.js
