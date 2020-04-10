@@ -1,8 +1,8 @@
 <!--
  * @Desc: ---   ----
  * @Date: 2019-12-23 10:17:59
- * @LastEditors  : 王
- * @LastEditTime : 2019-12-23 10:30:44
+ * @LastEditors: 王
+ * @LastEditTime: 2020-04-10 08:27:14
  -->
 ## 手机号正则验证
 
@@ -292,3 +292,89 @@ export function strToArr2(s, n) {
 }
 ```
 
+## 防抖和节流
+方法：
+
+```javascript
+/**
+ * @desc 函数防抖
+ * @param fn 函数
+ * @param delay 延迟执行毫秒数 默认0.5s
+ */
+export function debounce(fn, delay) {
+    var delay = delay || 500;
+    var timer;
+    return function () {
+            console.log('调用了debounce方法')
+            let args = arguments;
+            if(timer){
+                    clearTimeout(timer);
+            }
+            timer = setTimeout(() => {
+                    timer = null;
+                    fn.apply(this, args);
+            }, delay);
+    }
+}
+
+/**
+ * @desc 函数节流
+ * @param fn 函数
+ * @param interval 函数执行间隔时间毫秒数 默认1s
+ */
+export function throttle(fn, interval) {
+    var last;
+    var timer;
+    var interval = interval || 1000;
+    return function () {
+            console.log('调用了throttle方法')
+        var th = this;
+        var args = arguments;
+        var now = +new Date();
+        if (last && now - last < interval) {
+            clearTimeout(timer);
+            timer = setTimeout(function () {
+                last = now;
+                fn.apply(th, args);
+            }, interval);
+        } else {
+            last = now;
+            fn.apply(th, args);
+        }
+    }
+}
+```
+
+示例：
+
+```html
+<template>
+    <view>
+        <text @tap="clickDebounce()">防抖</text>
+        <text @tap="clickThrottle()">节流</text>
+    </view>
+</template>
+
+<script>
+    import { debounce, throttle } from '@/utils/index.js'
+    export default {
+        data() {
+            return {
+                num: 0
+            }
+        },
+        methods: {
+            // 防抖
+            clickDebounce: debounce(function() {
+                this.num += 1
+                console.log('第' + this.num +'次点击' )
+            }, 600),
+            // 节流
+            clickThrottle: throttle(function() {
+                this.num += 1
+                console.log('第' + this.num +'次点击' )
+            }, 800)
+        }
+    }
+</script>
+```
