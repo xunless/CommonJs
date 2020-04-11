@@ -1,8 +1,8 @@
 <!--
  * @Desc: ---   ----
  * @Date: 2019-12-23 11:47:00
- * @LastEditors  : 王
- * @LastEditTime : 2019-12-26 09:33:23
+ * @LastEditors: 王
+ * @LastEditTime: 2020-04-11 16:08:34
  -->
 ## 隐藏式状态栏
 
@@ -535,4 +535,35 @@ export default {
   
   ````
 
-  
+## 订单列表页Demo（Tabs+滑块）
+ - 包含滑动切换，滑块跟组，数据缓存，上拉加载。
+ - 数据使用Mock数据，Git附件Server可见
+ - Tabs单独组件，可单独使用
+### 示例
+![image](/images/tabs.gif)  
+### 地址
+- Tabs组件地址:  **/pages/index**
+- Server为Mock数据服务,需要安装依赖
+> Mock服务使用
+``` javascript
+  npm install 
+  npm run dev
+```
+- 演示Demo  
+> 滑动列表Demo放入HX运行
+
+Git地址:[点击进入](http://39.99.37.143:3000/wangbowen/Tabs.git)
+### Tabs参数
+| 属性名 | 类型 | 默认值 | 说明
+-|:-:|:-:|-
+tabs | string[] | 
+tabhight | Number| 0 | Tabs高度
+background | String| #ffffff | 背景颜色
+lineWidth | Number| 20  | 滑块宽度
+lineHeight | Number| 4  | 滑块高度
+activeColor | String| #fc4a18  | 选中颜色
+normorColor | String| #333333  | 字体未选中颜色
+active | Number| 0  | 默认选中
+### Tabs方法
+change : active改变时触发
+
