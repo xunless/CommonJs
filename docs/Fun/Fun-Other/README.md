@@ -387,3 +387,24 @@ export function throttle(fn, interval) {
 ## 常用正则总结
 
 https://github.com/xunless/CommonJs/blob/master/docs/Fun/Fun-Other/js/validate.js
+
+
+## 全局过滤时间戳转换时间日期（java接口时间返回全为时间戳）
+
+java后台数据返回的所有相关时间均为时间戳格式 需前端进行装换处理 在mian.js中引用 在页面中使用(time | dateFormat)
+
+```javascript
+Vue.filter('dateFormat', function (originVal) {
+  const dt = new Date(originVal)
+
+  const y = dt.getFullYear()
+  const m = (dt.getMonth() + 1 + '').padStart(2, '0')
+  const d = (dt.getDate() + '').padStart(2, '0')
+
+  const hh = (dt.getHours() + '').padStart(2, '0')
+  const mm = (dt.getMinutes() + '').padStart(2, '0')
+  const ss = (dt.getSeconds() + '').padStart(2, '0')
+
+  return `${y}-${m}-${d} ${hh}:${mm}:${ss}`
+})
+```
