@@ -20,3 +20,5 @@
 const { ActiveXObject } = window
 this.myObject = new ActiveXObject('myActiveX.PcscActiveX') || null
 ````
+
+## :sob: 未解决uni-app中转换probuffer中文乱码问题
