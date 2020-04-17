@@ -2,7 +2,7 @@
  * @Desc: ---   ----
  * @Date: 2019-12-23 11:47:00
  * @LastEditors: 刘
- * @LastEditTime: 2020-04-17 19:17:52
+ * @LastEditTime: 2020-04-17 19:35:52
  -->
 
 ## 隐藏式状态栏
@@ -696,14 +696,14 @@ Git 地址:[点击进入](http://39.99.37.143:3000/wangbowen/waterfallFlow.git)
 |      ------       |     :---:                                        |       :----:    |    :----:     |         -------------- |
 |  list	            |  要展示的数据	                                     |    Array	      |      —        |	        [ ]           |
 |  clearable      	|  是否显示清除按钮	                                 |     Boolean    |       —       |	        true            |
-|  initValue	      |  第一次显示时默认选中的文本	                       |     String	     |        —     |	        " "               |
-|  isCanInput	      |  是否可以输入值	                                 |     Boolean	    |       —	      |       false             |
-|  placeholder	    |  占位符	                                         |     String	      |       —	    |         "请选择"          |
-|  style_Container	|  组件根节点的行内样式	                           |     String	       |      —       |	        " "              |
-|  disabled	        |  是否禁用整个选择框	                             |     Boolean	     |    —         |	        false            |
-|  showItemNum    	|  显示列表的窗口高度，数字表示能显示几个列表项	       |   Number	       |    —         |         	5               |
-|  listShow	        |  第一次显示时是否显示列表                        	|   Boolean	        |   —	        |         false             |
-|  focusShowList    |	 当input获取焦点时，是否自动弹出列表框           	|     Boolean	      |   —         |	    null，表示在pc上自动弹出，在移动端(包括模拟环境)不弹|
+|  initValue	      |  第一次显示时默认选中的文本	                       |     String	     |        —      |	        " "               |
+|  isCanInput	      |  是否可以输入值	                                  |     Boolean	    |        —	    |       false             |
+|  placeholder	    |  占位符	                                         |     String	      |       —	     |         "请选择"          |
+|  style_Container	|  组件根节点的行内样式	                            |     String	     |        —      |	        " "              |
+|  disabled	        |  是否禁用整个选择框	                              |     Boolean	     |      —        |	        false            |
+|  showItemNum    	|  显示列表的窗口高度，数字表示能显示几个列表项	      |   Number	       |       —       |         	5               |
+|  listShow	        |  第一次显示时是否显示列表                        	|   Boolean	       |       —	      |         false             |
+|  focusShowList    |	 当input获取焦点时，是否自动弹出列表框           	 |     Boolean	    |    —           |	    null，表示在pc上自动弹出，在移动端(包括模拟环境)不弹|
 |  selectHideType	  |  本选择框的显示与其它选择框显示之间的关系	         |     String	       |    'independent' - 是独立的，与其它选择框互不影响<br>'hideAll' - 任何一个选择框展开时，隐藏所有其它选择框<br>'hideOthers'- 当本选择框展开时，隐藏其它的选择框。 当其它选择框展开时，不隐藏本选择框。<br>'hideSelf' - 当本选择框展开时，不隐藏其它的选择框。当其它选择框展开时，隐藏本选择框。	|"hideAll"|
 
 
