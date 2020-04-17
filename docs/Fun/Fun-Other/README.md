@@ -1,8 +1,8 @@
 <!--
  * @Desc: ---   ----
  * @Date: 2019-12-23 10:17:59
- * @LastEditors: 王
- * @LastEditTime: 2020-04-11 14:11:06
+ * @LastEditors: champoin
+ * @LastEditTime: 2020-04-17 18:43:14
  -->
 ## 手机号正则验证
 
@@ -475,3 +475,7 @@ var` `a = 2,b = ``'Miya'``;``[a,b,] = [b,a,]``a ``// Miya``b ``//2
 ```
 
 　这个是ES6中的数组的解构赋值，很方便的进行两个变量的交换。
+
+## Tinymce配置打包之后上传图片没有连接解决
+在项目目录` components/Tinymce/index.vue `中添加配置如下  
+`convert_urls: false,` // 关闭此选项，TinyMCE将不会自动处理URL，也就是说，插入的URL原本是什么就是什么，不会自动转换相对或绝对路径，这样会导致内容URL极其混乱。所以，默认此选项是开启的。
