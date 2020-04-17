@@ -662,7 +662,7 @@ change : active 改变时触发
 
 ### 示例
 
-![image](/images/tabs.gif)
+![image](/images/waterfallFlow.gif)
 
 ### 地址
 
