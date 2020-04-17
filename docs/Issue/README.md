@@ -21,4 +21,10 @@ const { ActiveXObject } = window
 this.myObject = new ActiveXObject('myActiveX.PcscActiveX') || null
 ````
 
-## :sob: 未解决uni-app中转换probuffer中文乱码问题
+## :sob: 未解决uni-app中转换arraybuffer中文乱码问题
+
+## :sob: 未解决IOS审核遇到以下问题
+
+- 提交的商品包含有非iOS设备信息
+- 如果是维修类型软件需要说明不是原厂配件，维修后保修期失效
+
