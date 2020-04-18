@@ -1,8 +1,13 @@
 <!--
  * @Desc: ---   ----
  * @Date: 2019-12-23 10:17:59
+<<<<<<< HEAD
  * @LastEditors: 王
- * @LastEditTime: 2020-04-18 21:45:56
+ * @LastEditTime: 2020-04-18 22:20:25
+=======
+ * @LastEditors: champoin
+ * @LastEditTime: 2020-04-17 18:43:14
+>>>>>>> 8ab8dc155a4b3150f24a90e50b21ae3866fa3e03
  -->
 ## 手机号正则验证
 
@@ -519,3 +524,6 @@ ctx.textAlign = 'center'; // 坐标点相对于文字的文字  取值：left、
 ctx.fillStyle = '#eb0707'; // 颜色
 ctx.fillText('这是canvas上的文字', 120, 200); // fillText(文本内容, x坐标，y坐标)
 ```
+## Tinymce配置打包之后上传图片没有连接解决
+在项目目录` components/Tinymce/index.vue `中添加配置如下  
+`convert_urls: false,` // 关闭此选项，TinyMCE将不会自动处理URL，也就是说，插入的URL原本是什么就是什么，不会自动转换相对或绝对路径，这样会导致内容URL极其混乱。所以，默认此选项是开启的。
