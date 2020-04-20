@@ -2,7 +2,7 @@
  * @Desc: ---   ----
  * @Date: 2019-12-23 11:47:00
  * @LastEditors: 刘
- * @LastEditTime: 2020-04-20 08:41:43
+ * @LastEditTime: 2020-04-20 08:46:21
  -->
 
 ## 隐藏式状态栏
@@ -750,6 +750,8 @@ export default {
         Vue.component('xfl-select', xflSelect);
     */
 }
+```
+
 ## uni-app 生成含有二维码的海报并下载保存到本地
 
 [组件下载地址](https://github.com/q310550690/uni-app-qrcode)
