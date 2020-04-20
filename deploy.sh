@@ -7,7 +7,7 @@ set -e
 npm run docs:build
 
 git add .
-git commit -m '更新文档'
+git commit -m '更新文档 '
 git push 
 
 cd -

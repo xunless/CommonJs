@@ -11,7 +11,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.2/jquery.fancybox.min.js"></script>
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.2/jquery.fancybox.min.css">
     
-    <link rel="preload" href="/assets/css/0.styles.487c790d.css" as="style"><link rel="preload" href="/assets/js/app.f01dfddb.js" as="script"><link rel="preload" href="/assets/js/2.44943338.js" as="script"><link rel="preload" href="/assets/js/14.d86515af.js" as="script"><link rel="prefetch" href="/assets/js/10.df234227.js"><link rel="prefetch" href="/assets/js/11.8513ecfc.js"><link rel="prefetch" href="/assets/js/12.2e24ce9e.js"><link rel="prefetch" href="/assets/js/13.32a432cb.js"><link rel="prefetch" href="/assets/js/15.0f132680.js"><link rel="prefetch" href="/assets/js/16.34a6d040.js"><link rel="prefetch" href="/assets/js/17.291c244d.js"><link rel="prefetch" href="/assets/js/3.0068475d.js"><link rel="prefetch" href="/assets/js/4.87b31e55.js"><link rel="prefetch" href="/assets/js/5.188e81ed.js"><link rel="prefetch" href="/assets/js/6.8eb0dafb.js"><link rel="prefetch" href="/assets/js/7.f30e5f06.js"><link rel="prefetch" href="/assets/js/8.8b6e475a.js"><link rel="prefetch" href="/assets/js/9.b9bd00f2.js">
+    <link rel="preload" href="/assets/css/0.styles.487c790d.css" as="style"><link rel="preload" href="/assets/js/app.e22c575a.js" as="script"><link rel="preload" href="/assets/js/2.44943338.js" as="script"><link rel="preload" href="/assets/js/14.7eb3a169.js" as="script"><link rel="prefetch" href="/assets/js/10.df234227.js"><link rel="prefetch" href="/assets/js/11.c4ee1c96.js"><link rel="prefetch" href="/assets/js/12.f70a4d6d.js"><link rel="prefetch" href="/assets/js/13.66e45419.js"><link rel="prefetch" href="/assets/js/15.cc7e0ccb.js"><link rel="prefetch" href="/assets/js/16.34a6d040.js"><link rel="prefetch" href="/assets/js/17.291c244d.js"><link rel="prefetch" href="/assets/js/3.0068475d.js"><link rel="prefetch" href="/assets/js/4.87b31e55.js"><link rel="prefetch" href="/assets/js/5.c3c407f3.js"><link rel="prefetch" href="/assets/js/6.a1785b91.js"><link rel="prefetch" href="/assets/js/7.0d58bc57.js"><link rel="prefetch" href="/assets/js/8.211c2cd1.js"><link rel="prefetch" href="/assets/js/9.7ed1c386.js">
     <link rel="stylesheet" href="/assets/css/0.styles.487c790d.css">
   </head>
   <body>
@@ -500,7 +500,104 @@
         Vue.component('xfl-select', xflSelect);
     */</span>
 <span class="token punctuation">}</span>
-</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
-    <script src="/assets/js/app.f01dfddb.js" defer></script><script src="/assets/js/2.44943338.js" defer></script><script src="/assets/js/14.d86515af.js" defer></script>
+## uni<span class="token operator">-</span>app 生成含有二维码的海报并下载保存到本地
+
+<span class="token punctuation">[</span>组件下载地址<span class="token punctuation">]</span><span class="token punctuation">(</span>https<span class="token operator">:</span><span class="token operator">/</span><span class="token operator">/</span>github<span class="token punctuation">.</span>com<span class="token operator">/</span>q310550690<span class="token operator">/</span>uni<span class="token operator">-</span>app<span class="token operator">-</span>qrcode<span class="token punctuation">)</span>
+
+<span class="token template-string"><span class="token template-punctuation string">`</span><span class="token template-punctuation string">`</span></span>`html
+  <span class="token operator">&lt;</span>template<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>view <span class="token keyword">class</span><span class="token operator">=</span><span class="token string">&quot;post&quot;</span><span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span>tki<span class="token operator">-</span>qrcode <span class="token keyword">class</span><span class="token operator">=</span><span class="token string">&quot;qrcode&quot;</span> cid<span class="token operator">=</span><span class="token string">&quot;qrcode&quot;</span> ref<span class="token operator">=</span><span class="token string">&quot;qrcode&quot;</span> <span class="token operator">:</span>val<span class="token operator">=</span><span class="token string">&quot;val&quot;</span> <span class="token operator">:</span>size<span class="token operator">=</span><span class="token string">&quot;size&quot;</span> <span class="token operator">:</span>onval<span class="token operator">=</span><span class="token string">&quot;onval&quot;</span> <span class="token operator">:</span>loadMake<span class="token operator">=</span><span class="token string">&quot;loadMake&quot;</span> <span class="token operator">:</span>usingComponents<span class="token operator">=</span><span class="token string">&quot;true&quot;</span> @result<span class="token operator">=</span><span class="token string">&quot;qrR&quot;</span> <span class="token operator">:</span>show<span class="token operator">=</span><span class="token string">&quot;false&quot;</span> <span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span>view <span class="token keyword">class</span><span class="token operator">=</span><span class="token string">&quot;wrapper&quot;</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span>canvas style<span class="token operator">=</span><span class="token string">&quot;height: 100%;width: 100%;backgroundColor: #FFFFFF&quot;</span> canvas<span class="token operator">-</span>id<span class="token operator">=</span><span class="token string">&quot;firstCanvas&quot;</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">/</span>canvas<span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">/</span>view<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span>view<span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span><span class="token operator">/</span>template<span class="token operator">&gt;</span>
+</code></pre></div><ul><li>script<div class="language-javascript extra-class"><pre class="language-javascript"><code>    <span class="token operator">&lt;</span>script<span class="token operator">&gt;</span>
+    <span class="token keyword">import</span> tkiQrcode <span class="token keyword">from</span> <span class="token string">'@/components/tki-qrcode/tki-qrcode.vue'</span>
+    <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+    <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token punctuation">{</span>
+        canvasShow<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+        picurl<span class="token operator">:</span><span class="token string">''</span><span class="token punctuation">,</span>
+        val<span class="token operator">:</span> <span class="token string">''</span><span class="token punctuation">,</span> <span class="token comment">// 要生成的二维码值</span>
+        size<span class="token operator">:</span> <span class="token number">325</span><span class="token punctuation">,</span> <span class="token comment">// 二维码大小</span>
+        unit<span class="token operator">:</span> <span class="token string">'upx'</span><span class="token punctuation">,</span> <span class="token comment">// 单位</span>
+        background<span class="token operator">:</span> <span class="token string">'#b4e9e2'</span><span class="token punctuation">,</span> <span class="token comment">// 背景色</span>
+        foreground<span class="token operator">:</span> <span class="token string">'#309286'</span><span class="token punctuation">,</span> <span class="token comment">// 前景色</span>
+        pdground<span class="token operator">:</span> <span class="token string">'#32dbc6'</span><span class="token punctuation">,</span> <span class="token comment">// 角标色</span>
+        icon<span class="token operator">:</span> <span class="token string">''</span><span class="token punctuation">,</span> <span class="token comment">// 二维码图标</span>
+        iconsize<span class="token operator">:</span> <span class="token number">40</span><span class="token punctuation">,</span> <span class="token comment">// 二维码图标大小</span>
+        lv<span class="token operator">:</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token comment">// 二维码容错级别 ， 一般不用设置，默认就行</span>
+        onval<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span> <span class="token comment">// val值变化时自动重新生成二维码</span>
+        loadMake<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token comment">// 组件加载完成后自动生成二维码</span>
+        src<span class="token operator">:</span> <span class="token string">''</span><span class="token punctuation">,</span> <span class="token comment">// 二维码生成后的图片地址或base64</span>
+        cover<span class="token operator">:</span><span class="token string">'static/share_bg.png'</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token function-variable function">onLoad</span><span class="token operator">:</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">option</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+      <span class="token keyword">var</span> thas<span class="token operator">=</span><span class="token keyword">this</span>
+      thas<span class="token punctuation">.</span>val<span class="token operator">=</span>option<span class="token punctuation">.</span>devicenumber
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    methods<span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token function">qrR</span><span class="token punctuation">(</span><span class="token parameter">path</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">let</span> that <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>qr_path <span class="token operator">=</span> path<span class="token punctuation">;</span>
+        <span class="token keyword">let</span> system_info <span class="token operator">=</span> uni<span class="token punctuation">.</span><span class="token function">getSystemInfoSync</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">let</span> ctx <span class="token operator">=</span> uni<span class="token punctuation">.</span><span class="token function">createCanvasContext</span><span class="token punctuation">(</span><span class="token string">'firstCanvas'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>res<span class="token punctuation">.</span>path<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        ctx<span class="token punctuation">.</span><span class="token function">drawImage</span><span class="token punctuation">(</span>res<span class="token punctuation">.</span>path<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> uni<span class="token punctuation">.</span><span class="token function">upx2px</span><span class="token punctuation">(</span><span class="token number">750</span><span class="token punctuation">)</span><span class="token punctuation">,</span> uni<span class="token punctuation">.</span><span class="token function">upx2px</span><span class="token punctuation">(</span><span class="token number">1330</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        ctx<span class="token punctuation">.</span><span class="token function">drawImage</span><span class="token punctuation">(</span>path<span class="token punctuation">,</span> uni<span class="token punctuation">.</span><span class="token function">upx2px</span><span class="token punctuation">(</span><span class="token number">184</span><span class="token punctuation">)</span><span class="token punctuation">,</span> uni<span class="token punctuation">.</span><span class="token function">upx2px</span><span class="token punctuation">(</span><span class="token number">630</span><span class="token punctuation">)</span><span class="token punctuation">,</span> uni<span class="token punctuation">.</span><span class="token function">upx2px</span><span class="token punctuation">(</span><span class="token number">375</span><span class="token punctuation">)</span><span class="token punctuation">,</span> uni<span class="token punctuation">.</span><span class="token function">upx2px</span><span class="token punctuation">(</span><span class="token number">400</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        ctx<span class="token punctuation">.</span><span class="token function">draw</span><span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+          uni<span class="token punctuation">.</span><span class="token function">canvasToTempFilePath</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+            x<span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+            y<span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+            width<span class="token operator">:</span> <span class="token number">375</span><span class="token punctuation">,</span>
+            height<span class="token operator">:</span> uni<span class="token punctuation">.</span><span class="token function">upx2px</span><span class="token punctuation">(</span><span class="token number">1330</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+            destWidth<span class="token operator">:</span> <span class="token number">375</span><span class="token punctuation">,</span>
+            destHeight<span class="token operator">:</span> uni<span class="token punctuation">.</span><span class="token function">upx2px</span><span class="token punctuation">(</span><span class="token number">1330</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+            canvasId<span class="token operator">:</span> <span class="token string">'firstCanvas'</span><span class="token punctuation">,</span>
+            <span class="token function-variable function">success</span><span class="token operator">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">res</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+              uni<span class="token punctuation">.</span><span class="token function">saveImageToPhotosAlbum</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+                filePath<span class="token operator">:</span> res<span class="token punctuation">.</span>tempFilePath<span class="token punctuation">,</span>
+                <span class="token function-variable function">success</span><span class="token operator">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                  that<span class="token punctuation">.</span>picurl<span class="token operator">=</span>res<span class="token punctuation">.</span>tempFilePath
+                <span class="token punctuation">}</span>
+              <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token function">fail</span><span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+              uni<span class="token punctuation">.</span><span class="token function">showToast</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+                  title<span class="token operator">:</span> <span class="token string">'生成海报失败'</span><span class="token punctuation">,</span>
+                  icon<span class="token operator">:</span> <span class="token string">'none'</span>
+              <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+          <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token comment">//保存</span>
+      <span class="token function">savePic</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        uni<span class="token punctuation">.</span><span class="token function">showLoading</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+          title<span class="token operator">:</span> <span class="token string">'正在保存'</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        uni<span class="token punctuation">.</span><span class="token function">saveImageToPhotosAlbum</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+          filePath<span class="token operator">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span>picurl<span class="token punctuation">,</span>
+          <span class="token function-variable function">success</span><span class="token operator">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            uni<span class="token punctuation">.</span><span class="token function">showToast</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+              title<span class="token operator">:</span> <span class="token string">'图片保存成功～'</span>
+            <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token function-variable function">fail</span><span class="token operator">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token function-variable function">complete</span><span class="token operator">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+            uni<span class="token punctuation">.</span><span class="token function">hideLoading</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    components<span class="token operator">:</span> <span class="token punctuation">{</span>
+        tkiQrcode
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">&gt;</span>
+</code></pre></div></li></ul> <div class="language- extra-class"><pre class="language-text"><code></code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.e22c575a.js" defer></script><script src="/assets/js/2.44943338.js" defer></script><script src="/assets/js/14.7eb3a169.js" defer></script>
   </body>
 </html>

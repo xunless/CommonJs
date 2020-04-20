@@ -1,8 +1,13 @@
 <!--
  * @Desc: ---   ----
  * @Date: 2019-12-23 10:17:59
+<<<<<<< HEAD
+ * @LastEditors: 王
+ * @LastEditTime: 2020-04-18 22:20:25
+=======
  * @LastEditors: champoin
  * @LastEditTime: 2020-04-17 18:43:14
+>>>>>>> 8ab8dc155a4b3150f24a90e50b21ae3866fa3e03
  -->
 ## 手机号正则验证
 
@@ -476,6 +481,49 @@ var` `a = 2,b = ``'Miya'``;``[a,b,] = [b,a,]``a ``// Miya``b ``//2
 
 　这个是ES6中的数组的解构赋值，很方便的进行两个变量的交换。
 
+## 常用canvas总结
+
+```javascript
+canvas = document.getElementById('canvas')
+// 设置canvas的宽高
+canvas.height = 500
+canvas.width = 500
+
+// 二维绘图API
+ctx = canvas.getContext("2d")
+
+// 画一个半径为10，边框蓝色，背景红色的圆
+ctx.beginPath() // 开始一条路径 
+ctx.arc(60, 60, 50, 0, Math.PI * 2, true) // arc(圆心x坐标，y坐标，半径，起始角，结束角，true顺时针false逆时针默认false)
+ctx.strokeStyle = "#4b8beb" // 线条(边框)颜色
+ctx.stroke()  // 绘制线条颜色
+ctx.fillStyle = "#eb0707" // 填充颜色
+ctx.fill()  // 填充背景
+
+// 三角形
+ctx.beginPath()
+ctx.strokeStyle = "#BBFFFF"
+ctx.moveTo(50, 150) // 开始点
+ctx.lineTo(100, 150) // 连接上一个点
+ctx.lineTo(75, 100) // 此时有两条线
+ctx.closePath() // 创建从当前所在点到开始点的路径
+ctx.stroke()
+
+// 图片
+const img = new Image;
+img.src = 'http://pic.cnblogs.com/avatar/1809452/20191027130609.png'
+img.onload = function() { // 绘制图片
+  ctx.beginPath();
+  ctx.drawImage(img, 50, 50, 75, 75); // drawImage(img, x坐标，y坐标，宽，高)
+  ctx.closePath();
+}
+
+// 文字
+ctx.font = '12px Arial'; // 文字的样式
+ctx.textAlign = 'center'; // 坐标点相对于文字的文字  取值：left、center、right
+ctx.fillStyle = '#eb0707'; // 颜色
+ctx.fillText('这是canvas上的文字', 120, 200); // fillText(文本内容, x坐标，y坐标)
+```
 ## Tinymce配置打包之后上传图片没有连接解决
 在项目目录` components/Tinymce/index.vue `中添加配置如下  
 `convert_urls: false,` // 关闭此选项，TinyMCE将不会自动处理URL，也就是说，插入的URL原本是什么就是什么，不会自动转换相对或绝对路径，这样会导致内容URL极其混乱。所以，默认此选项是开启的。
