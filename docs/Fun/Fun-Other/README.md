@@ -1,13 +1,8 @@
 <!--
  * @Desc: ---   ----
  * @Date: 2019-12-23 10:17:59
-<<<<<<< HEAD
- * @LastEditors: 王
- * @LastEditTime: 2020-04-18 22:20:25
-=======
  * @LastEditors: champoin
- * @LastEditTime: 2020-04-17 18:43:14
->>>>>>> 8ab8dc155a4b3150f24a90e50b21ae3866fa3e03
+ * @LastEditTime: 2020-04-22 17:03:05
  -->
 ## 手机号正则验证
 
