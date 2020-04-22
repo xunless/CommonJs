@@ -1,8 +1,8 @@
 <!--
  * @Desc: ---   ----
  * @Date: 2019-12-23 10:17:59
- * @LastEditors  : 王
- * @LastEditTime : 2019-12-23 10:32:33
+ * @LastEditors: champoin
+ * @LastEditTime: 2020-04-22 16:58:16
  -->
 <!-- ## Vue的方法 -->
 
@@ -119,3 +119,5 @@ linkProps(url) {
   }
 }
 ```
+
+
