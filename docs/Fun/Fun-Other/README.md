@@ -639,3 +639,41 @@ async function comImg (file, quality, filename = `new_${file.name}`) {
   document.body.appendChild(resultImg) //添加至页面
 }
 ```
+
+## 验证某个字符串是否包含在数组中
+
+````javascript
+/**
+
+ * @name: 验证某个字符串是否包含在数组中
+
+ * @test: test font
+
+ * @msg:
+
+ * @param {Boolean} true 存在 false不存在
+
+ * @return:
+
+ */
+
+export function isStrInArray (str, arr) {
+
+ let n = arr.length
+
+ for (let i = 0; i < n; i++) {
+
+  if (arr[i] + '' === str) {
+
+   return true
+
+  }
+
+ }
+
+ return false
+
+}
+
+````
+
