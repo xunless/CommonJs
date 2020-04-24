@@ -6,6 +6,7 @@
  -->
 ## element-ui 上传压缩并返回Blob对象
 [组件下载地址](http://39.99.37.143:3000/HuangGuanJun/webPublic/src/master/js/uploadComOne.vue)
+
 ```javascript
 // 方法
 /**
@@ -45,3 +46,8 @@ export function dataURLtoBlob(dataurl) {
   return new Blob([u8arr], { type: mime })
 }
 ```
+
+## Vue中使用百度地图,高德地图,腾讯地图
+
+[组件下载地址](http://39.99.37.143:3000/ZhangMengLin/MapForVue)
+
