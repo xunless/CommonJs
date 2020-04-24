@@ -8,7 +8,7 @@
 
 
 ## 微信公众号获取用户信息
- 
+
 ### TypeScript 方法
 
 1. [getQueryString](#正则解析-url-获取公众号-code) 获取公众号 code 方法
@@ -120,4 +120,11 @@ linkProps(url) {
 }
 ```
 
+## Vue中使用百度地图,高德地图,腾讯地图
+
+git地址:
+
+````
+http://39.99.37.143:3000/ZhangMengLin/MapForVue
+````
 
