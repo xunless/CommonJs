@@ -1,8 +1,8 @@
 <!--
  * @Desc: ---   ----
  * @Date: 2019-12-23 10:25:25
- * @LastEditors  : 王
- * @LastEditTime : 2019-12-23 12:20:48
+ * @LastEditors: 刘
+ * @LastEditTime: 2020-04-25 08:49:38
  -->
 ##  emijo代码格式
 #### 代码格式请自行复制，提交问题请再问提前加上格式，需要某类问题可直接搜索表情
@@ -32,4 +32,63 @@ this.myObject = new ActiveXObject('myActiveX.PcscActiveX') || null
 #### :sob: 2.提交的商品包含有非iOS设备信息
 
 #### :sob: 3如果是维修类型软件需要说明不是原厂配件，维修后保修期失效
+
+## :smile: 解决UNIAPP中使用uni-popup组件在APP中有时会不弹的问题
+#### :sob:在这个组件目录中修改
+<br/>![image](/image/ml.png)
+
+```javascript
+open() {
+    this.showPopup = true
+    // #ifdef APP-PLUS
+    this.showTrans = true
+    // #endif
+    // #ifndef APP-PLUS
+    // 在app中不使用延迟
+    this.$nextTick(() => {
+        setTimeout(() => {
+            this.showTrans = true
+        }, 50);
+    })
+    // #endif
+    // this.$nextTick(() => {
+    // 	setTimeout(() => {
+    // 		this.showTrans = true
+    // 	}, 50);
+    // })
+    this.$emit('change', {
+        show: true
+    })
+},
+close(type) {
+    this.showTrans = false
+    // #ifdef APP-PLUS
+    this.$emit('change', {
+        show: false
+    })
+    this.showPopup = false
+    // #endif
+    // #ifndef APP-PLUS
+    // 在app中不使用延迟
+    this.$nextTick(() => {
+        clearTimeout(this.timer)
+        this.timer = setTimeout(() => {
+            this.$emit('change', {
+                show: false
+            })
+            this.showPopup = false
+        }, 300)
+    })
+    // #endif
+    // this.$nextTick(() => {
+    // 	clearTimeout(this.timer)
+    // 	this.timer = setTimeout(() => {
+    // 		this.$emit('change', {
+    // 			show: false
+    // 		})
+    // 		this.showPopup = false
+    // 	}, 300)
+    // })
+},
+```
 
