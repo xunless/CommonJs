@@ -2,7 +2,7 @@
  * @Desc: ---   ----
  * @Date: 2019-12-23 10:25:25
  * @LastEditors: 刘
- * @LastEditTime: 2020-04-25 08:49:38
+ * @LastEditTime: 2020-04-25 08:52:06
  -->
 ##  emijo代码格式
 #### 代码格式请自行复制，提交问题请再问提前加上格式，需要某类问题可直接搜索表情
@@ -34,8 +34,8 @@ this.myObject = new ActiveXObject('myActiveX.PcscActiveX') || null
 #### :sob: 3如果是维修类型软件需要说明不是原厂配件，维修后保修期失效
 
 ## :smile: 解决UNIAPP中使用uni-popup组件在APP中有时会不弹的问题
-#### :sob:在这个组件目录中修改
-<br/>![image](/image/ml.png)
+#### :smile:在这个组件目录中修改
+<br/>![image](./image/ml.png)
 
 ```javascript
 open() {
