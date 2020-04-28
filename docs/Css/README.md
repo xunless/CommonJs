@@ -2,7 +2,7 @@
  * @Desc: ---   ----
  * @Date: 2019-12-23 11:47:00
  * @LastEditors: 王
- * @LastEditTime: 2020-04-28 15:35:07
+ * @LastEditTime: 2020-04-28 15:48:54
  -->
 ## 巧妙使用flex布局实现手机自适应
 Html布局代码，使用改布局即可解决在各移动设备的顶部Tab切换，下方需要无限加载布局。
@@ -74,7 +74,7 @@ PS:案例视图
 ```
 
 ## 设置文本首字母样式，常用于显示价格
-<a data-fancybox title="xx" class="psimg" href="/images/css/ps02.jpg">![案例视图](/images/css/ps02.jpg)</a>
+![image](/images/css/ps03.png)
 ```html
   <text class="price">￥101.00</text>
 
@@ -89,6 +89,7 @@ PS:案例视图
 ```
 
 ## 设置空格的宽度
+![image](/images/css/ps02.png)
 <a data-fancybox title="xx" class="psimg" href="/images/css/ps03.jpg">![案例视图](/images/css/ps03.jpg)</a>
 ```html
   <text class="space">我有 空 格</text>
