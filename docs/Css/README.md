@@ -2,7 +2,7 @@
  * @Desc: ---   ----
  * @Date: 2019-12-23 11:47:00
  * @LastEditors: 王
- * @LastEditTime: 2020-04-28 15:48:54
+ * @LastEditTime: 2020-04-28 17:59:52
  -->
 ## 巧妙使用flex布局实现手机自适应
 Html布局代码，使用改布局即可解决在各移动设备的顶部Tab切换，下方需要无限加载布局。
@@ -90,11 +90,56 @@ PS:案例视图
 
 ## 设置空格的宽度
 ![image](/images/css/ps02.png)
-<a data-fancybox title="xx" class="psimg" href="/images/css/ps03.jpg">![案例视图](/images/css/ps03.jpg)</a>
 ```html
   <text class="space">我有 空 格</text>
 
   .space {
 		word-spacing: 30rpx;
 	}
+```
+
+## 多个元素水平自动排列，自动换行，每行元素两边对齐
+![image](/images/css/ps04.png)
+```html
+<template>
+  <view class="container">
+    <view class="content">
+      <view class="item" v-for="(item, index) in 10" :key="index">
+        <text>{{ item }}</text>
+      </view>
+    </view>
+  </view>
+</template>
+
+  
+<style lang="scss" scoped>
+	.container {
+		width: 100vw;
+		padding: 24rpx;
+		box-sizing: border-box;
+		background: #808080;
+		
+		.content {
+			width: 100%;
+			background: #FFFFFF;
+			display: flex;
+			flex-wrap: wrap;
+			
+			.item {
+				width: 150rpx;
+				height: 150rpx;
+				border-radius: 20rpx;
+				background: #3498db;
+				margin-bottom: 20rpx;
+				//  calc((父元素宽度 - 子元素宽度*每行子元素个数) / 每行的间距个数)
+				margin-right: calc((100% - 600rpx) / 3);
+        // 选中每行的最后一个元素不设置margin-right
+				&:nth-of-type(4n) {
+					margin-right: 0;
+				}
+			}
+		}
+	}
+</style>
+
 ```
