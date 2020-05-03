@@ -627,6 +627,7 @@ export default {
 
 - Tabs 组件地址: **/pages/index**
 - Server 为 Mock 数据服务,需要安装依赖
+  
   > Mock 服务使用
 
 ```javascript
@@ -635,6 +636,7 @@ export default {
 ```
 
 - 演示 Demo
+  
   > 滑动列表 Demo 放入 HX 运行
 
 Git 地址:[点击进入](http://39.99.37.143:3000/wangbowen/Tabs.git)
@@ -669,6 +671,7 @@ change : active 改变时触发
 - Tabs 组件地址: **/components/**
 
 - 演示 Demo
+  
   > 直接拉入 HX 运行
 
 Git 地址:[点击进入](http://39.99.37.143:3000/wangbowen/waterfallFlow.git)
@@ -852,4 +855,7 @@ export default {
       },
     }
   </script>
-```
+  ```
+## uniapp中多语言
+
+[组件下载地址](http://39.99.37.143:3000/ZhangMengLin/changeLang)
