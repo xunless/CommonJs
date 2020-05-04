@@ -256,3 +256,44 @@ export default {
   }
 }
 ```
+## uni-app 使用阿里iconfont
+
+- 1.在阿里图标库我的项目中，在未下载到本地之前 点击上方更多操作-编辑项目-Font Family中的值换个名称(自定义)
+
+- 2.将所需的icon项目下载到本地.
+
+- 3.在项目中创建一个公用的css文件,在此文件下加个iconfont文件 将下载的文件下里的iconfont.css,iconfont.ttf,iconfont.svg复制到上述文件下
+
+- 4.按下述代码配置修改iconfont.css文件
+
+- style
+  ```css
+    @font-face {font-family: "apIconfont";
+      src: url('~@/static/css/font1/iconfont.ttf?t=1587949784818') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+      url('~@/static/css/font1/iconfont.svg?t=1587949784818#apIconfont') format('svg'); /* iOS 4.1- */
+    }
+
+    .apIconfont {
+      font-family: "apIconfont" !important;
+      font-size: 16px;
+      font-style: normal;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    .icon-saoyisao:before {
+      content: "\e696";
+    }
+
+  ```
+- 在App.vue或者所需界面导入iconfont.css
+
+- style
+
+  ```css
+    @import '@/static/css/font1/iconfont.css';
+
+  ```
+
+
+
