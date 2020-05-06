@@ -2,7 +2,7 @@
  * @Desc: ---   ----
  * @Date: 2019-12-23 11:47:00
  * @LastEditors: 王
- * @LastEditTime: 2020-05-06 16:57:08
+ * @LastEditTime: 2020-05-06 17:07:25
  -->
 
 ## 隐藏式状态栏
@@ -864,4 +864,4 @@ export default {
 
 [组件下载地址](http://39.99.37.143:3000/wangbaobao/nvueListDemo)
 
-<iframe height=200 width=600 src="https://img2020.cnblogs.com/blog/1809452/202005/1809452-20200506163411115-2008821468.gif">
+<iframe height=850 width=400 src="https://img2020.cnblogs.com/blog/1809452/202005/1809452-20200506163411115-2008821468.gif">
