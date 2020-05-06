@@ -1,8 +1,8 @@
 <!--
  * @Desc: ---   ----
  * @Date: 2019-12-23 11:47:00
- * @LastEditors: 刘
- * @LastEditTime: 2020-04-20 08:46:21
+ * @LastEditors: 王
+ * @LastEditTime: 2020-05-06 14:58:26
  -->
 
 ## 隐藏式状态栏
@@ -859,3 +859,9 @@ export default {
 ## uniapp中多语言
 
 [组件下载地址](http://39.99.37.143:3000/ZhangMengLin/changeLang)
+
+## nvue列表页，下拉刷新，上拉加载
+
+[组件下载地址](http://39.99.37.143:3000/wangbaobao/nvueListDemo)
+
+![image](/images/css/nvueList.gif)
