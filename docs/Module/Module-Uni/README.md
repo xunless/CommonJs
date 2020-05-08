@@ -868,4 +868,6 @@ export default {
 
 ## uniapp支付宝登录插件
 
+- 121212
+
 [插件下载地址](http://39.99.37.143:3000/JiaWenZhen/Alipay.git)
