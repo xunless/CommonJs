@@ -677,3 +677,22 @@ export function isStrInArray (str, arr) {
 
 ````
 
+## 出生日期转换为年龄
+
+`````javascript
+import moment from 'moment'
+`````
+
+
+
+````javascript
+ getAge (birthday) {
+      const text = moment(birthday, 'YYYY-MM-DD').fromNow()
+      let age = parseInt(text, 10)  // 注意：parseInt(string, radix);第二个参数不能省略，否则会报Lint错误
+      if (isNaN(age)) {
+        age = '未知'
+      }
+      return age
+    },
+````
+
