@@ -2,7 +2,7 @@
  * @Desc: ---   ----
  * @Date: 2019-12-23 11:47:00
  * @LastEditors: 刘
- * @LastEditTime: 2020-05-09 09:16:17
+ * @LastEditTime: 2020-05-09 09:24:00
  -->
 
 ## 隐藏式状态栏
@@ -860,12 +860,6 @@ export default {
 
 [组件下载地址](http://39.99.37.143:3000/ZhangMengLin/changeLang)
 
-## nvue列表页，下拉刷新，上拉加载
-
-[组件下载地址](http://39.99.37.143:3000/wangbaobao/nvueListDemo)
-
-<iframe height=850 width=400 src="https://img2020.cnblogs.com/blog/1809452/202005/1809452-20200506163411115-2008821468.gif">
-
 ## 百度人脸识别插件
 
 [组件下载地址](https://ext.dcloud.net.cn/plugin?id=800)
@@ -875,3 +869,12 @@ export default {
 ![image](./img/3.jpg)
 ![image](./img/4.jpg)
 ![image](./img/5.jpg)
+
+## nvue列表页，下拉刷新，上拉加载
+
+[组件下载地址](http://39.99.37.143:3000/wangbaobao/nvueListDemo)
+
+<iframe height=850 width=400 src="https://img2020.cnblogs.com/blog/1809452/202005/1809452-20200506163411115-2008821468.gif">
+
+
+
