@@ -1,8 +1,8 @@
 <!--
  * @Desc: ---   ----
  * @Date: 2019-12-23 11:47:00
- * @LastEditors: 王
- * @LastEditTime: 2020-05-06 17:07:25
+ * @LastEditors: 刘
+ * @LastEditTime: 2020-05-09 09:16:17
  -->
 
 ## 隐藏式状态栏
@@ -866,3 +866,12 @@ export default {
 
 <iframe height=850 width=400 src="https://img2020.cnblogs.com/blog/1809452/202005/1809452-20200506163411115-2008821468.gif">
 
+## 百度人脸识别插件
+
+[组件下载地址](https://ext.dcloud.net.cn/plugin?id=800)
+
+![image](./img/1.jpg)
+![image](./img/2.jpg)
+![image](./img/3.jpg)
+![image](./img/4.jpg)
+![image](./img/5.jpg)
