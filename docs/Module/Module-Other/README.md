@@ -9,3 +9,4 @@
 ## uniapp支付宝登录插件
 
 [插件下载地址](http://39.99.37.143:3000/JiaWenZhen/Alipay.git)
+[插件市场地址](https://ext.dcloud.net.cn/plugin?id=1180)
