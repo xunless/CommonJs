@@ -297,3 +297,21 @@ export default {
 
 
 
+## 获取元素页面位置
+
+```jsx
+// id为元素id
+uni.createSelectorQuery().select(id).boundingClientRect(function(rect){
+	console.log(rect, 'rect')
+	// rect.id      // 节点的ID
+	// rect.dataset // 节点的dataset
+	// rect.left    // 节点的左边界坐标
+	// rect.right   // 节点的右边界坐标
+	// rect.top     // 节点的上边界坐标
+	// rect.bottom  // 节点的下边界坐标
+	// rect.width   // 节点的宽度
+	// rect.height  // 节点的高度
+}).exec()
+                    
+```
+
