@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>诚毅物联网</title>
+    <meta name="description" content="前端常用方法汇总">
+    <link rel="icon" href="/favicon.ico">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.2/jquery.fancybox.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.2/jquery.fancybox.min.css">
+    
+    <link rel="preload" href="/assets/css/0.styles.84a21f2b.css" as="style"><link rel="preload" href="/assets/js/app.ce9b1ef4.js" as="script"><link rel="preload" href="/assets/js/2.48cda0bc.js" as="script"><link rel="preload" href="/assets/js/11.80b8ec55.js" as="script"><link rel="prefetch" href="/assets/js/10.a6678440.js"><link rel="prefetch" href="/assets/js/12.414280d2.js"><link rel="prefetch" href="/assets/js/13.dbc407ce.js"><link rel="prefetch" href="/assets/js/14.0f6b4428.js"><link rel="prefetch" href="/assets/js/15.653b7c06.js"><link rel="prefetch" href="/assets/js/16.e374fb70.js"><link rel="prefetch" href="/assets/js/17.de094949.js"><link rel="prefetch" href="/assets/js/3.5ff255f8.js"><link rel="prefetch" href="/assets/js/4.3fd3889f.js"><link rel="prefetch" href="/assets/js/5.63cff2d1.js"><link rel="prefetch" href="/assets/js/6.4a6c3a07.js"><link rel="prefetch" href="/assets/js/7.f55476dd.js"><link rel="prefetch" href="/assets/js/8.502c0dab.js"><link rel="prefetch" href="/assets/js/9.4de2eba8.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.84a21f2b.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">诚毅物联网</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">首页</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="公用方法" class="dropdown-title"><span class="title">公用方法</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Fun/Fun-Uni/" class="nav-link router-link-exact-active router-link-active">uni-app</a></li><li class="dropdown-item"><!----> <a href="/Fun/Fun-Vue/" class="nav-link">vue</a></li><li class="dropdown-item"><!----> <a href="/Fun/Fun-React/" class="nav-link">React</a></li><li class="dropdown-item"><!----> <a href="/Fun/Fun-Other/" class="nav-link">通用方法</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="公用组件" class="dropdown-title"><span class="title">公用组件</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Module/Module-Uni/" class="nav-link">uni-app</a></li><li class="dropdown-item"><!----> <a href="/Module/Module-Vue/" class="nav-link">vue</a></li><li class="dropdown-item"><!----> <a href="/Module/Module-React/" class="nav-link">React</a></li><li class="dropdown-item"><!----> <a href="/Module/Module-Other/" class="nav-link">通用组件</a></li></ul></div></div><div class="nav-item"><a href="/Css/" class="nav-link">CSS使用技巧</a></div><div class="nav-item"><a href="/Issue/" class="nav-link">问题汇总</a></div><div class="nav-item"><a href="/About/" class="nav-link">使用手册</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">首页</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="公用方法" class="dropdown-title"><span class="title">公用方法</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Fun/Fun-Uni/" class="nav-link router-link-exact-active router-link-active">uni-app</a></li><li class="dropdown-item"><!----> <a href="/Fun/Fun-Vue/" class="nav-link">vue</a></li><li class="dropdown-item"><!----> <a href="/Fun/Fun-React/" class="nav-link">React</a></li><li class="dropdown-item"><!----> <a href="/Fun/Fun-Other/" class="nav-link">通用方法</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="公用组件" class="dropdown-title"><span class="title">公用组件</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Module/Module-Uni/" class="nav-link">uni-app</a></li><li class="dropdown-item"><!----> <a href="/Module/Module-Vue/" class="nav-link">vue</a></li><li class="dropdown-item"><!----> <a href="/Module/Module-React/" class="nav-link">React</a></li><li class="dropdown-item"><!----> <a href="/Module/Module-Other/" class="nav-link">通用组件</a></li></ul></div></div><div class="nav-item"><a href="/Css/" class="nav-link">CSS使用技巧</a></div><div class="nav-item"><a href="/Issue/" class="nav-link">问题汇总</a></div><div class="nav-item"><a href="/About/" class="nav-link">使用手册</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span></span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/Fun/Fun-Uni/#基于uni-request封装的请求" class="sidebar-link">基于uni.request封装的请求</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/Fun/Fun-Uni/#使用方法" class="sidebar-link">使用方法</a></li></ul></li><li><a href="/Fun/Fun-Uni/#uniapp中图片上传" class="sidebar-link">UNIAPP中图片上传</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/Fun/Fun-Uni/#app更新" class="sidebar-link">APP更新</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/Fun/Fun-Uni/#uni-app-使用阿里iconfont" class="sidebar-link">uni-app 使用阿里iconfont</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/Fun/Fun-Uni/#获取元素页面位置" class="sidebar-link">获取元素页面位置</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="基于uni-request封装的请求"><a href="#基于uni-request封装的请求" class="header-anchor">#</a> 基于uni.request封装的请求</h2> <div class="custom-block tip"><p class="custom-block-title">提示</p> <p>baseurl是请求接口的接口地址</p></div> <h3 id="使用方法"><a href="#使用方法" class="header-anchor">#</a> 使用方法</h3> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">import</span> server <span class="token keyword">from</span> <span class="token string">'@/utils/request.js'</span>
+<span class="token keyword">export</span> <span class="token keyword">function</span> <span class="token function">login</span><span class="token punctuation">(</span><span class="token parameter">param</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token function">server</span><span class="token punctuation">(</span><span class="token string">'login'</span><span class="token punctuation">,</span> <span class="token string">'post'</span><span class="token punctuation">,</span> param<span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre></div><div class="language-JavaScript extra-class"><pre class="language-javascript"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> baseurl <span class="token punctuation">}</span>  <span class="token keyword">from</span> <span class="token string">'./baseData.js'</span>
+<span class="token comment">// 一些错误code的提示</span>
+<span class="token keyword">const</span> errormessage<span class="token operator">=</span><span class="token punctuation">{</span>
+  <span class="token number">404</span><span class="token punctuation">:</span><span class="token string">'请求出错,接口未找到'</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">function</span> <span class="token function">request</span><span class="token punctuation">(</span><span class="token parameter">url<span class="token punctuation">,</span> methods<span class="token punctuation">,</span> type</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	<span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">Promise</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">resolve<span class="token punctuation">,</span> reject</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+		uni<span class="token punctuation">.</span><span class="token function">request</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+			url<span class="token punctuation">:</span> baseurl <span class="token operator">+</span> url<span class="token punctuation">,</span>
+			method<span class="token punctuation">:</span> methods<span class="token punctuation">,</span>
+			timeout<span class="token punctuation">:</span> <span class="token number">10000</span><span class="token punctuation">,</span>
+			data<span class="token punctuation">:</span> type<span class="token punctuation">,</span>
+			header<span class="token punctuation">:</span><span class="token punctuation">{</span>
+				
+			<span class="token punctuation">}</span><span class="token punctuation">,</span>
+			<span class="token function">success</span><span class="token punctuation">(</span><span class="token parameter">res</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          <span class="token keyword">if</span><span class="token punctuation">(</span>res<span class="token punctuation">.</span>statusCode<span class="token operator">===</span><span class="token number">200</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+            <span class="token function">resolve</span><span class="token punctuation">(</span>res<span class="token punctuation">.</span>data<span class="token punctuation">)</span>
+          <span class="token punctuation">}</span><span class="token keyword">else</span> <span class="token punctuation">{</span>
+              uni<span class="token punctuation">.</span><span class="token function">showToast</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+                icon<span class="token punctuation">:</span><span class="token string">'none'</span><span class="token punctuation">,</span>
+                title<span class="token punctuation">:</span> errormessage<span class="token punctuation">[</span>res<span class="token punctuation">.</span>statusCode<span class="token punctuation">]</span><span class="token punctuation">,</span>
+                duration<span class="token punctuation">:</span> <span class="token number">2000</span>
+              <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token function">reject</span><span class="token punctuation">(</span>res<span class="token punctuation">.</span>data<span class="token punctuation">)</span>
+          <span class="token punctuation">}</span>
+	  	<span class="token punctuation">}</span><span class="token punctuation">,</span>
+			<span class="token function">fail</span><span class="token punctuation">(</span><span class="token parameter">error</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          uni<span class="token punctuation">.</span><span class="token function">showToast</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+          icon<span class="token punctuation">:</span><span class="token string">'none'</span><span class="token punctuation">,</span>
+          title<span class="token punctuation">:</span> <span class="token string">'未知异常，请重试！！！'</span><span class="token punctuation">,</span>
+          duration<span class="token punctuation">:</span> <span class="token number">2000</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+				<span class="token function">reject</span><span class="token punctuation">(</span>error<span class="token punctuation">)</span>
+			<span class="token punctuation">}</span>
+		<span class="token punctuation">}</span><span class="token punctuation">)</span>
+	<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+<span class="token punctuation">}</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> request
+
+</code></pre></div><h2 id="uniapp中图片上传"><a href="#uniapp中图片上传" class="header-anchor">#</a> UNIAPP中图片上传</h2> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">/**
+ * @param {url} url 接口地址
+ * @param {Object} formData 需要向后台传递的参数
+ * @return 接口返回数据
+ * @description UNIAPP中图片上传 可根据实际接口进行修改
+ * */</span>
+<span class="token function">uploadImgFun</span><span class="token punctuation">(</span><span class="token parameter">url<span class="token punctuation">,</span> formData</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">var</span> that <span class="token operator">=</span> <span class="token keyword">this</span>
+  <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">Promise</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">resolve<span class="token punctuation">,</span> reject</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    uni<span class="token punctuation">.</span><span class="token function">chooseImage</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      count<span class="token punctuation">:</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token comment">//默认9</span>
+      sizeType<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'original'</span><span class="token punctuation">,</span> <span class="token string">'compressed'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token comment">//可以指定是原图还是压缩图，默认二者都有</span>
+      <span class="token comment">// sourceType: ['album'], //从相册选择</span>
+      <span class="token function-variable function">success</span><span class="token punctuation">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">res</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        uni<span class="token punctuation">.</span><span class="token function">showLoading</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+          title<span class="token punctuation">:</span> <span class="token string">'正在上传中'</span><span class="token punctuation">,</span>
+          mask<span class="token punctuation">:</span> <span class="token boolean">true</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span>
+        <span class="token keyword">const</span> path <span class="token operator">=</span> res<span class="token punctuation">.</span>tempFilePaths<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>path<span class="token punctuation">)</span>
+        uni<span class="token punctuation">.</span><span class="token function">uploadFile</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+          <span class="token comment">// that.$url.imgUrl 表示连接地址</span>
+          url<span class="token punctuation">:</span> url<span class="token punctuation">,</span>
+          filePath<span class="token punctuation">:</span> path<span class="token punctuation">,</span>
+          name<span class="token punctuation">:</span> <span class="token string">'file'</span><span class="token punctuation">,</span>
+          formData<span class="token punctuation">,</span>
+          <span class="token function">success</span><span class="token punctuation">(</span><span class="token parameter">res</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>res<span class="token punctuation">)</span>
+            <span class="token keyword">const</span> data <span class="token operator">=</span> <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">parse</span><span class="token punctuation">(</span>res<span class="token punctuation">.</span>data<span class="token punctuation">)</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>data<span class="token punctuation">.</span>status <span class="token operator">!==</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+              uni<span class="token punctuation">.</span><span class="token function">showToast</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+                icon<span class="token punctuation">:</span> <span class="token string">'none'</span><span class="token punctuation">,</span>
+                title<span class="token punctuation">:</span> data<span class="token punctuation">.</span>message
+              <span class="token punctuation">}</span><span class="token punctuation">)</span>
+            <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+              <span class="token function">resolve</span><span class="token punctuation">(</span>data<span class="token punctuation">.</span>data<span class="token punctuation">)</span>
+            <span class="token punctuation">}</span>
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="app更新"><a href="#app更新" class="header-anchor">#</a> APP更新</h2> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>uni-popup</span> <span class="token attr-name">ref</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>popupDown<span class="token punctuation">&quot;</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>center<span class="token punctuation">&quot;</span></span> <span class="token attr-name">:maskClick</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>!downLoadIng<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>view</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>confirmbox<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>view</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>title<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>版本更新<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>view</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>view</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>center<span class="token punctuation">&quot;</span></span> <span class="token attr-name">v-if</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>!downLoadIng<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>确定更新应用么<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>view</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>view</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>btns<span class="token punctuation">&quot;</span></span> <span class="token attr-name">v-if</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>!downLoadIng<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>view</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>btn<span class="token punctuation">&quot;</span></span> <span class="token attr-name">@tap</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>closePropDown<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>取消<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>view</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>view</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>btn<span class="token punctuation">&quot;</span></span> <span class="token attr-name">@tap</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>confirmBtnDown<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>确认<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>view</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>view</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>load-line</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>title<span class="token punctuation">&quot;</span></span> <span class="token attr-name">v-if</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>downLoadIng<span class="token punctuation">&quot;</span></span> <span class="token attr-name">loadType</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>line<span class="token punctuation">&quot;</span></span> <span class="token attr-name">:loadText</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>loadText<span class="token punctuation">&quot;</span></span> <span class="token attr-name">:lineInfo</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>lineInfo<span class="token punctuation">&quot;</span></span> <span class="token attr-name">:loadPercent</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>loadPercent<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>load-line</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>view</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>uni-popup</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">import</span> uniPopup <span class="token keyword">from</span> <span class="token string">'@/components/uni-popup/uni-popup.vue'</span><span class="token punctuation">;</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  components<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    uniPopup
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+      downLoadIng<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+      lineInfo<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        colorChange<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+        loadColor<span class="token punctuation">:</span> <span class="token string">'#6ee2e1,#2ba98c,#a07e1e'</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      loadText<span class="token punctuation">:</span> <span class="token string">'正在下载更新，请耐心等待:'</span><span class="token punctuation">,</span>
+      loadPercent<span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+      appversion<span class="token punctuation">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
+      serverversion<span class="token punctuation">:</span> <span class="token string">''</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  methods<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 获取当前版本和最新版本信息</span>
+    <span class="token function">getNewVersion</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+      <span class="token keyword">let</span> this_ <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">;</span>
+      plus<span class="token punctuation">.</span>runtime<span class="token punctuation">.</span><span class="token function">getProperty</span><span class="token punctuation">(</span>plus<span class="token punctuation">.</span>runtime<span class="token punctuation">.</span>appid<span class="token punctuation">,</span> <span class="token keyword">async</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">wgtinfo</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        this_<span class="token punctuation">.</span>appversion <span class="token operator">=</span> wgtinfo<span class="token punctuation">.</span>version<span class="token punctuation">;</span>
+        <span class="token comment">// 请求最新版本信息</span>
+        this_<span class="token punctuation">.</span>$http<span class="token punctuation">.</span><span class="token function">request</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+          method<span class="token punctuation">:</span> <span class="token string">'get'</span><span class="token punctuation">,</span>
+          url<span class="token punctuation">:</span> qrSoftVersion<span class="token punctuation">,</span>
+          params<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+            versionType<span class="token punctuation">:</span> <span class="token string">'APP版本'</span><span class="token punctuation">,</span>
+            pageIndex<span class="token punctuation">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+            pageSize<span class="token punctuation">:</span> <span class="token number">1</span>
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token parameter">res</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+          <span class="token keyword">if</span> <span class="token punctuation">(</span>res<span class="token punctuation">.</span>resultCode <span class="token operator">==</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>res<span class="token punctuation">.</span>data<span class="token punctuation">.</span>lsList<span class="token punctuation">.</span>length <span class="token operator">&gt;</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+              this_<span class="token punctuation">.</span>serverversion <span class="token operator">=</span> res<span class="token punctuation">.</span>data<span class="token punctuation">.</span>lsList<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>
+            <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+              <span class="token keyword">let</span> serverversionObj <span class="token operator">=</span> <span class="token punctuation">{</span>
+                versionName<span class="token punctuation">:</span> this_<span class="token punctuation">.</span>appversion
+              <span class="token punctuation">}</span>
+              this_<span class="token punctuation">.</span>serverversion <span class="token operator">=</span> serverversionObj<span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>this_<span class="token punctuation">.</span>serverversion<span class="token punctuation">.</span>versionName <span class="token operator">&gt;</span> this_<span class="token punctuation">.</span>appversion<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+              this_<span class="token punctuation">.</span>appversion <span class="token operator">=</span> <span class="token number">0</span>
+            <span class="token punctuation">}</span>
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">catch</span><span class="token punctuation">(</span><span class="token parameter">err</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      
+        <span class="token punctuation">}</span><span class="token punctuation">)</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token comment">/**
+     * 显示版本更新弹窗
+     * */</span>
+    <span class="token function">showDown</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>serverversion <span class="token operator">&amp;&amp;</span> <span class="token keyword">this</span><span class="token punctuation">.</span>appversion <span class="token operator">&gt;=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>serverversion<span class="token punctuation">.</span>versionName<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        plus<span class="token punctuation">.</span>nativeUI<span class="token punctuation">.</span><span class="token function">toast</span><span class="token punctuation">(</span><span class="token string">'已是最新版本'</span><span class="token punctuation">)</span>
+      <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>$refs<span class="token punctuation">.</span>popupDown<span class="token punctuation">.</span><span class="token function">open</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token function">closePropDown</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>$refs<span class="token punctuation">.</span>popupDown<span class="token punctuation">.</span><span class="token function">close</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token function">confirmBtnDown</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">downLoad</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>serverversion<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token comment">//下载新版本</span>
+    <span class="token function">downLoad</span><span class="token punctuation">(</span><span class="token parameter">ver</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">let</span> this_ <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">;</span>
+      <span class="token keyword">let</span> fileName <span class="token operator">=</span> <span class="token string">''</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>ver<span class="token punctuation">.</span>versionPath <span class="token operator">&amp;&amp;</span> ver<span class="token punctuation">.</span>versionPath<span class="token punctuation">.</span><span class="token function">indexOf</span><span class="token punctuation">(</span><span class="token string">'apk'</span><span class="token punctuation">)</span> <span class="token operator">&gt;</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>plus<span class="token punctuation">.</span>os<span class="token punctuation">.</span>name <span class="token operator">==</span> <span class="token string">'Android'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          fileName <span class="token operator">=</span> ver<span class="token punctuation">.</span>versionPath<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>plus<span class="token punctuation">.</span>os<span class="token punctuation">.</span>name <span class="token operator">==</span> <span class="token string">'iOS'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          <span class="token comment">// ios应用平台链接</span>
+          plus<span class="token punctuation">.</span>runtime<span class="token punctuation">.</span><span class="token function">openURL</span><span class="token punctuation">(</span><span class="token string">&quot;https://itunes.apple.com/cn/app/%E6%98%93%E4%BB%A5%E5%85%BB%E8%BD%A6/id1434960351?mt=8&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+          <span class="token keyword">return</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+        fileName <span class="token operator">=</span> ver<span class="token punctuation">.</span>versionPath<span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+      this_<span class="token punctuation">.</span>downLoadIng <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+      <span class="token keyword">const</span> downloadTask <span class="token operator">=</span> uni<span class="token punctuation">.</span><span class="token function">downloadFile</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+        url<span class="token punctuation">:</span> apiBaseUrl <span class="token operator">+</span> fileName<span class="token punctuation">,</span>
+        <span class="token function-variable function">success</span><span class="token punctuation">:</span> <span class="token punctuation">(</span><span class="token parameter">res</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+          this_<span class="token punctuation">.</span>downLoadIng <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+          this_<span class="token punctuation">.</span><span class="token function">closePropDown</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+          <span class="token keyword">if</span> <span class="token punctuation">(</span>res<span class="token punctuation">.</span>statusCode <span class="token operator">===</span> <span class="token number">200</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'下载成功'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            this_<span class="token punctuation">.</span><span class="token function">installWgt</span><span class="token punctuation">(</span>res<span class="token punctuation">.</span>tempFilePath<span class="token punctuation">)</span><span class="token punctuation">;</span>
+          <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+            this_<span class="token punctuation">.</span><span class="token function">toast</span><span class="token punctuation">(</span><span class="token string">&quot;下载更新资源失败！&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+      downloadTask<span class="token punctuation">.</span><span class="token function">onProgressUpdate</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">res</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        this_<span class="token punctuation">.</span>loadPercent <span class="token operator">=</span> res<span class="token punctuation">.</span>progress<span class="token punctuation">;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token function">installWgt</span><span class="token punctuation">(</span><span class="token parameter">path</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      plus<span class="token punctuation">.</span>nativeUI<span class="token punctuation">.</span><span class="token function">showWaiting</span><span class="token punctuation">(</span><span class="token string">&quot;安装更新资源...&quot;</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+        back<span class="token punctuation">:</span> <span class="token string">&quot;none&quot;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      plus<span class="token punctuation">.</span>runtime<span class="token punctuation">.</span><span class="token function">install</span><span class="token punctuation">(</span>path<span class="token punctuation">,</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        plus<span class="token punctuation">.</span>nativeUI<span class="token punctuation">.</span><span class="token function">showWaiting</span><span class="token punctuation">(</span><span class="token string">&quot;应用资源更新完成！&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          <span class="token keyword">if</span> <span class="token punctuation">(</span>path<span class="token punctuation">.</span><span class="token function">indexOf</span><span class="token punctuation">(</span><span class="token string">'wgt'</span><span class="token punctuation">)</span> <span class="token operator">&gt;</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            plus<span class="token punctuation">.</span>nativeUI<span class="token punctuation">.</span><span class="token function">closeWaiting</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            plus<span class="token punctuation">.</span>runtime<span class="token punctuation">.</span><span class="token function">restart</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+          <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+            plus<span class="token punctuation">.</span>runtime<span class="token punctuation">.</span><span class="token function">quit</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">1000</span><span class="token punctuation">)</span>
+
+      <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        plus<span class="token punctuation">.</span>nativeUI<span class="token punctuation">.</span><span class="token function">closeWaiting</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        uni<span class="token punctuation">.</span><span class="token function">showModal</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+          title<span class="token punctuation">:</span> <span class="token string">'提示'</span><span class="token punctuation">,</span>
+          content<span class="token punctuation">:</span> <span class="token string">&quot;安装文件失败[&quot;</span> <span class="token operator">+</span> e<span class="token punctuation">.</span>code <span class="token operator">+</span> <span class="token string">&quot;]：&quot;</span> <span class="token operator">+</span> e<span class="token punctuation">.</span>message<span class="token punctuation">,</span>
+          <span class="token function">success</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="uni-app-使用阿里iconfont"><a href="#uni-app-使用阿里iconfont" class="header-anchor">#</a> uni-app 使用阿里iconfont</h2> <ul><li><p>1.在阿里图标库我的项目中，在未下载到本地之前 点击上方更多操作-编辑项目-Font Family中的值换个名称(自定义)</p></li> <li><p>2.将所需的icon项目下载到本地.</p></li> <li><p>3.在项目中创建一个公用的css文件,在此文件下加个iconfont文件 将下载的文件下里的iconfont.css,iconfont.ttf,iconfont.svg复制到上述文件下</p></li> <li><p>4.按下述代码配置修改iconfont.css文件</p></li> <li><p>style</p> <div class="language-css extra-class"><pre class="language-css"><code>  <span class="token atrule"><span class="token rule">@font-face</span></span> <span class="token punctuation">{</span><span class="token property">font-family</span><span class="token punctuation">:</span> <span class="token string">&quot;apIconfont&quot;</span><span class="token punctuation">;</span>
+    <span class="token property">src</span><span class="token punctuation">:</span> <span class="token url"><span class="token function">url</span><span class="token punctuation">(</span>'~@/static/css/font1/iconfont.ttf?t=1587949784818'<span class="token punctuation">)</span></span> <span class="token function">format</span><span class="token punctuation">(</span><span class="token string">'truetype'</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token comment">/* chrome, firefox, opera, Safari, Android, iOS 4.2+ */</span>
+    <span class="token url"><span class="token function">url</span><span class="token punctuation">(</span>'~@/static/css/font1/iconfont.svg?t=1587949784818#apIconfont'<span class="token punctuation">)</span></span> <span class="token function">format</span><span class="token punctuation">(</span><span class="token string">'svg'</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">/* iOS 4.1- */</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token selector">.apIconfont</span> <span class="token punctuation">{</span>
+    <span class="token property">font-family</span><span class="token punctuation">:</span> <span class="token string">&quot;apIconfont&quot;</span> <span class="token important">!important</span><span class="token punctuation">;</span>
+    <span class="token property">font-size</span><span class="token punctuation">:</span> 16px<span class="token punctuation">;</span>
+    <span class="token property">font-style</span><span class="token punctuation">:</span> normal<span class="token punctuation">;</span>
+    <span class="token property">-webkit-font-smoothing</span><span class="token punctuation">:</span> antialiased<span class="token punctuation">;</span>
+    <span class="token property">-moz-osx-font-smoothing</span><span class="token punctuation">:</span> grayscale<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token selector">.icon-saoyisao:before</span> <span class="token punctuation">{</span>
+    <span class="token property">content</span><span class="token punctuation">:</span> <span class="token string">&quot;\e696&quot;</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+</code></pre></div></li> <li><p>在App.vue或者所需界面导入iconfont.css</p></li> <li><p>style</p> <div class="language-css extra-class"><pre class="language-css"><code>  <span class="token atrule"><span class="token rule">@import</span> <span class="token string">'@/static/css/font1/iconfont.css'</span><span class="token punctuation">;</span></span>
+
+</code></pre></div></li></ul> <h2 id="获取元素页面位置"><a href="#获取元素页面位置" class="header-anchor">#</a> 获取元素页面位置</h2> <div class="language-jsx extra-class"><pre class="language-jsx"><code><span class="token comment">// id为元素id</span>
+uni<span class="token punctuation">.</span><span class="token function">createSelectorQuery</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">select</span><span class="token punctuation">(</span>id<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">boundingClientRect</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">rect</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+	console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>rect<span class="token punctuation">,</span> <span class="token string">'rect'</span><span class="token punctuation">)</span>
+	<span class="token comment">// rect.id      // 节点的ID</span>
+	<span class="token comment">// rect.dataset // 节点的dataset</span>
+	<span class="token comment">// rect.left    // 节点的左边界坐标</span>
+	<span class="token comment">// rect.right   // 节点的右边界坐标</span>
+	<span class="token comment">// rect.top     // 节点的上边界坐标</span>
+	<span class="token comment">// rect.bottom  // 节点的下边界坐标</span>
+	<span class="token comment">// rect.width   // 节点的宽度</span>
+	<span class="token comment">// rect.height  // 节点的高度</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">exec</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+                    
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.ce9b1ef4.js" defer></script><script src="/assets/js/2.48cda0bc.js" defer></script><script src="/assets/js/11.80b8ec55.js" defer></script>
+  </body>
+</html>
