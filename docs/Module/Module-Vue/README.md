@@ -51,3 +51,8 @@ export function dataURLtoBlob(dataurl) {
 
 [组件下载地址](http://39.99.37.143:3000/ZhangMengLin/MapForVue)
 
+## Vue中table深色组件
+
+[组件下载地址](http://39.99.37.143:3000/ZhangMengLin/AdminUi)
+
+![1](E:\CommonJs\docs\Module\Module-Vue\image\1.jpg)
