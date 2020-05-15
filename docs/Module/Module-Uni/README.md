@@ -2,7 +2,7 @@
  * @Desc: ---   ----
  * @Date: 2019-12-23 11:47:00
  * @LastEditors: 王
- * @LastEditTime: 2020-05-15 17:25:23
+ * @LastEditTime: 2020-05-15 17:41:37
  -->
 
 ## 隐藏式状态栏
@@ -874,6 +874,12 @@ export default {
 
 [组件下载地址](http://39.99.37.143:3000/wangbaobao/nvueListDemo)
 
-![image](./img/6.jpg)
+![image](./img/6.gif)
+
+## 自定义tabbar, 凸起按钮
+
+[组件下载地址](http://39.99.37.143:3000/wangbaobao/customTabbar)
+
+![image](./img/7.jpg)
 
 
