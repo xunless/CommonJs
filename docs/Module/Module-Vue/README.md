@@ -56,3 +56,7 @@ export function dataURLtoBlob(dataurl) {
 [组件下载地址](http://39.99.37.143:3000/ZhangMengLin/AdminUi)
 
 ![1](E:\CommonJs\docs\Module\Module-Vue\image\1.jpg)
+
+## Vue中二维码生成 显示 下载
+
+[组件下载地址](http://39.99.37.143:3000/ZhangMengLin/QrCodeDown)
