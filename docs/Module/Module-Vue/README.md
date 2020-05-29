@@ -60,3 +60,12 @@ export function dataURLtoBlob(dataurl) {
 ## Vue中二维码生成 显示 下载
 
 [组件下载地址](http://39.99.37.143:3000/ZhangMengLin/QrCodeDown)
+
+## Echarts地图钻取
+
+[组件下载地址](https://github.com/dongkelun/vue-echarts-map)
+
+[预览地址](http://gh.dongkelun.com/vue-echarts-map/#/)
+
+
+

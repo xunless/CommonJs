@@ -683,8 +683,6 @@ export function isStrInArray (str, arr) {
 import moment from 'moment'
 `````
 
-
-
 ````javascript
  getAge (birthday) {
       const text = moment(birthday, 'YYYY-MM-DD').fromNow()
