@@ -2,7 +2,7 @@
  * @Desc: ---   ----
  * @Date: 2019-12-23 10:25:25
  * @LastEditors: 刘
- * @LastEditTime: 2020-05-04 08:57:45
+ * @LastEditTime: 2020-05-29 19:51:57
  -->
 ##  emijo代码格式
 #### 代码格式请自行复制，提交问题请再问提前加上格式，需要某类问题可直接搜索表情
@@ -98,3 +98,7 @@ close(type) {
 
 #### :解决方法：[微信开放社区](https://developers.weixin.qq.com/community/develop/doc/00082460f449a8c77f4a4bad75ac00?jumpto=reply&parent_commentid=000c44b92dc0b84a724a92d7f518&commentid=000ae2ac22ce70c18e4ae19d65b0)
 <br/>![image](./image/7.2.png)
+
+## :smile: 8.苹果开发者资质类型从个人转为组织
+
+流程文档[查看](http://39.99.37.143:3000/liuzhen/iOS_Dev.git)
