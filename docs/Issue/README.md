@@ -23,15 +23,17 @@ this.myObject = new ActiveXObject('myActiveX.PcscActiveX') || null
 
 ## :sob: 4.未解决uni-app中转换arraybuffer中文乱码问题
 
-## :sob: 5.未解决IOS审核遇到以下问题
+## :smile:5.未解决IOS审核遇到以下问题
 
-#### :smile: 1). app包含第三方登录时，必须有苹果账户登录
+####  :smile:1). app包含第三方登录时，必须有苹果账户登录
 
 > 利用接口控制第三方登录的显示隐藏
 
-#### :sob: 2).提交的商品包含有非iOS设备信息
+#### :smile: 2).提交的商品包含有非iOS设备信息
 
-#### :sob: 3).如果是维修类型软件需要说明不是原厂配件，维修后保修期失效
+> 营销图中不能包含价格相关和手机边框不能是非IOS手机
+
+#### :smile:3).如果是维修类型软件需要说明不是原厂配件，维修后保修期失效
 
 ## :smile: 6.解决UNIAPP中使用uni-popup组件在APP中有时会不弹的问题
 #### :smile:在这个组件目录中修改
