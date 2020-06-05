@@ -67,5 +67,8 @@ export function dataURLtoBlob(dataurl) {
 
 [预览地址](http://gh.dongkelun.com/vue-echarts-map/#/)
 
+## 刻度尺进度条组件
 
+[组件下载地址](http://39.99.37.143:3000/ZhangMengLin/MarkLine)
 
+![1](E:\CommonJs\docs\Module\Module-Vue\image\2.png)
