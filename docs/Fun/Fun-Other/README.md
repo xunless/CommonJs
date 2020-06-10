@@ -1,10 +1,61 @@
 <!--
  * @Desc: ---   ----
  * @Date: 2019-12-23 10:17:59
- * @LastEditors: 刘
- * @LastEditTime: 2020-04-21 11:39:00
+ * @LastEditors: champoin
+ * @LastEditTime: 2020-06-10 10:44:04
  -->
+## java中使用socket的方法
+[公司git地址](http://39.99.37.143:3000/HuangGuanJun/webPublic/src/master/js/utils)
+### 使用方法
+#### UNIAPP中使用方法
 
+1. 引入文件，utils -> socket.js
+
+2. ```javascript
+   import Socket from '@/utils/socket'
+   let socket = new Socket({url: 'ws://192.168.1.168:9988/ws'})
+   // 初始化连接
+   socket.init()
+   // user里面的key可以在 utils -> proto -> SocketSend.js -> Message 中找到
+   const user = {type: 1, code: '666'}
+   /*
+   	发送数据
+   	@param {string} ASXC 这个为后台固定字符串，使用时需要向java要
+   	@param {object} user
+   */
+   socket.send('ASXC', user)
+   // 返回数据的方法
+   socket.receviMessage().then(res => {
+   	console.log(res)
+   })
+   ```
+
+#### WEB中使用方法
+
+1. 引入文件，utils -> CySocket.js
+
+2. ```javascript
+   import { CySocket } from '@/utils/CySocket'
+   let cySocket = new CySocket({
+       server: 'ws://192.168.1.168:9988/ws',
+       autoReconnect: false,
+       // socket打开事件
+       openSocket: function() {
+           // user里面的key可以在 utils -> proto -> SocketSend.js -> Message 中找到
+           const user = {type: 1, code: '666'}
+           /*
+               发送数据
+               @param {string} ASXC 这个为后台固定字符串，使用时需要向java要
+               @param {object} user
+           */
+           this.sendMsg('ASXC', user)
+       },
+       // socket数据返回事件
+       receiveMsg: function(data) {
+           console.log(data)
+       }
+   })
+   ```
 ## 手机号正则验证
 
 1. 本 demo 为 TS 使用,JS 使用将参数 `num:string` 删除。
