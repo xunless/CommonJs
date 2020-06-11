@@ -2,7 +2,7 @@
  * @Desc: ---   ----
  * @Date: 2019-12-23 11:47:00
  * @LastEditors: 刘
- * @LastEditTime: 2020-06-11 10:17:45
+ * @LastEditTime: 2020-06-11 10:29:37
  -->
 
 ## 隐藏式状态栏
@@ -892,15 +892,16 @@ export default {
 
 [组件下载地址](http://39.99.37.143:3000/liuzhen/PushTestDemo.git)
 
-#### 使用方法： 
-<p>1、把tools目录放到项目根目录，与pages文件夹同级，里面所有的方法都在里面了，有不懂的可以再问我QQ：398927951 </p>
+### 使用方法： 
+<p>1、把tools目录放到项目根目录，与pages文件夹同级，里面所有的方法都在里面了 </p>
 <p>2、根目录新建一个文件夹nativeplugins，把YOYO-JPush文件夹放进去</p>
 <p>3、打自定义基座的时候，记得要在manifest.json中，APP模块权限配置 - 勾选 【消息推送】</p>
 
 
 第一种，云打包：
 1、App.vue 初始化极光推送服务与申请推送权限
-<pre>
+
+```javascript
 import JPushPlugin from '@/tools/JPush.js';
 
 export default {
@@ -919,12 +920,13 @@ export default {
         // #endif
     },
 
-    ...
+   
 };
-</pre>
+```
 
 2、登录成功后，绑定别名，或者标签，这里示意绑定将userid（一定要是唯一值）绑定为别名：
-<pre>
+
+```javascript
 import JPushPlugin from '@/tools/JPush.js';
 export default {
     methods: {
@@ -944,10 +946,11 @@ export default {
         }
     }
 }
-</pre>
+```
 
 3、用户退出后，清除别名绑定
-<pre>
+
+```javascript
 import JPushPlugin from '@/tools/JPush.js';
 
 // #ifdef APP-PLUS
@@ -960,9 +963,10 @@ if (plus.os.name == 'iOS') {
     })
 }
 // #endif
-</pre>
-#### 打包信息
-##### IOS（测试）:
+```
+
+### 打包信息
+#### IOS（测试）:
 Bundle ID ： com.teawithmilk  <br/>
 
 描述文件：根目录下 `teawithmilkDev.mobileprovision`<br/>
