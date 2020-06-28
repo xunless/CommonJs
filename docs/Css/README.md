@@ -179,3 +179,15 @@ css部分
 
 
 <img src="./image/1592649500(1).jpg" alt="1592649500(1)" style="zoom:50%;" />
+
+## css竖向排列
+
+````css
+	width: 15px;  
+    margin: 0 auto;  
+    line-height: 24px;  
+    font-size: 20px;  
+    word-wrap: break-word;/*英文的时候需要加上这句，自动换行*/  
+
+````
+
