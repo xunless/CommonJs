@@ -1,8 +1,8 @@
 <!--
  * @Desc: ---   ----
  * @Date: 2019-12-23 10:17:59
- * @LastEditors: champoin
- * @LastEditTime: 2020-06-10 10:44:04
+ * @LastEditors: 刘
+ * @LastEditTime: 2020-07-07 10:37:48
  -->
 ## java中使用socket的方法
 [公司git地址](http://39.99.37.143:3000/HuangGuanJun/webPublic/src/master/js/utils)
@@ -745,3 +745,6 @@ import moment from 'moment'
     },
 ````
 
+## JAVA 地址三级联动JSON
+
+https://github.com/xunless/CommonJs/blob/master/docs/Fun/Fun-Other/js/java_address_JSON.js

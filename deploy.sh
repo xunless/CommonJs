@@ -5,7 +5,7 @@
  # @Author: 刘
  # @Date: 2020-04-11 14:14:49
  # @LastEditors: 刘
- # @LastEditTime: 2020-07-07 09:21:17
+ # @LastEditTime: 2020-07-07 10:38:03
  # @Update Descripttion: 
 ### 
 #!/usr/bin/env sh
@@ -17,7 +17,7 @@ set -e
 npm run docs:build
 
 git add .
-git commit -m '新增安卓音频播放插件'
+git commit -m 'JAVA 地址三级联动JSON'
 git push 
 
 cd -
