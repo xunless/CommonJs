@@ -2,7 +2,7 @@
  * @Desc: ---   ----
  * @Date: 2019-12-23 11:47:00
  * @LastEditors: 刘
- * @LastEditTime: 2020-06-11 10:29:37
+ * @LastEditTime: 2020-07-07 09:20:51
  -->
 
 ## 隐藏式状态栏
@@ -981,7 +981,58 @@ Bundle ID ： com.teawithmilk  <br/>
 
 ![image](./img/push.jpg)
 
+## 安卓音频播放插件（可息屏播放，带通知栏）
 
+[组件下载地址](http://39.99.37.143:3000/liuzhen/audioDemo_android.git)
+
+### 安卓播放器插件用法
+
+#### 1.首先引入插件，并初始化服务
+``` javascript
+var playerModule = uni.requireNativePlugin("PlayerModule")
+this.setPlayerModule(playerModule)
+playerModule.onDestory(); // 销毁服务
+setTimeout(function(){
+	// 服务初始化
+	playerModule.startPlayerService((data)=>{
+		// type =0 缓冲
+		// type =1 总的时间
+		// type =2 当前播放的时间
+		// type =3 暂停
+		// type =4 播放
+		// type =5 播放发生变化
+		if(data.type==1){
+			// console.log(data)
+			let totalData = data
+			uni.$emit('setDuration',totalData.progress)
+			setTimeout(function() {
+				// console.log(totalData)
+				for(let i = 0; i<3; i++){
+					data.index=i;
+					_this.setPlayMP3(totalData)
+				}
+			}, 100);
+			// console.log(playerModule)
+		}
+		_this.setPlayMP3(data)
+	})
+},20)
+```
+
+#### 2.播放插件方法
+``` javascript
+// 安卓播放器参数
+audioObj_Android: {
+	"path": "", // 音乐路径
+	"imageUrl": "", // 图片路径
+	"title": "", // 音乐名称
+	"artist": "" // 作者
+},
+play(); // 播放
+onPause(); // 暂停
+playMusic(); // 继续播放
+seekTo(); // 设置播放进度
+```
 
 
 
